@@ -12,7 +12,7 @@
 
 Dette repository indeholder frit tilgængelige EPUB-udgaver af Frede Østergaards digtsamlinger fra 1965 til 2023. Alle udgaver er validerede EPUB-filer og forsynet med ISBN.
 
-EPUB-filerne kan hentes under Releases.
+EPUB-filerne kan hentes under (Releases)[Releases].
 
 ## Katalog
 
@@ -50,3 +50,11 @@ EPUB-filerne kan hentes under Releases.
 | Aftryk                | 2010–2011 | 978-87-85590-29-9 |
 | Landskab              | 2004–2023 | 978-87-85590-30-5 |
 
+
+## Ophavsret
+
+Teksterne er fortsat beskyttet af ophavsret.
+
+EPUB-udgaverne stilles gratis til rådighed efter aftale med forfatteren og/eller rettighedshaverne. Videredistribution er kun tilladt i uændret form og med denne meddelelse bevaret.
+
+© Frede Østergaard / Forlaget Den Gamle Poet
