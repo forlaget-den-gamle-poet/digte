@@ -12,7 +12,7 @@
 
 Dette repository indeholder frit tilgængelige EPUB-udgaver af Frede Østergaards digtsamlinger fra 1965 til 2023. Alle udgaver er validerede EPUB-filer og forsynet med ISBN.
 
-EPUB-filerne kan hentes under (Releases)[Releases].
+EPUB-filerne kan hentes under [Releases](Releases).
 
 ## Katalog
 
