@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#2b3a42">
+<title>Forlaget Den Gamle Poet — Digte af Frede Østergaard</title>
+<meta name="description" content="Frit tilgængelige EPUB-udgaver af Frede Østergaards digtsamlinger, 1965–2023.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;1,400;1,500&family=Newsreader:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1f2623;
+    --sea:#2b3a42;
+    --sea-deep:#161f24;
+    --sand:#c9b79c;
+    --paper-sand:#f1ece0;
+    --wetsand:#8c7960;
+    --paper:#e6e1d3;
+    --driftwood:#8b5e45;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Newsreader',serif;
+    line-height:1.65;
+  }
+  :focus-visible{outline:2px solid var(--driftwood);outline-offset:2px;}
+
+  .hero{
+    background:linear-gradient(180deg,var(--sea) 0%,var(--sea-deep) 100%);
+    color:var(--sand);
+    padding:5.5rem 1.5rem 3.5rem;
+    text-align:center;
+  }
+  .eyebrow{
+    font-family:'IBM Plex Mono',monospace;
+    letter-spacing:0.28em;
+    text-transform:uppercase;
+    font-size:0.7rem;
+    opacity:0.75;
+    margin:0 0 2.25rem;
+  }
+  .lead{
+    max-width:34rem;
+    margin:0 auto 2.5rem;
+    font-size:1rem;
+    opacity:0.85;
+  }
+  .epigraph{
+    font-family:'Fraunces',serif;
+    font-style:italic;
+    font-weight:400;
+    font-size:clamp(1.5rem,1rem + 2.2vw,2.3rem);
+    max-width:30rem;
+    margin:0 auto 3rem;
+    line-height:1.45;
+    color:var(--paper-sand);
+  }
+  .epigraph span{display:block;}
+  h1{
+    font-family:'Fraunces',serif;
+    font-weight:500;
+    font-size:clamp(1.7rem,1.2rem + 2vw,2.5rem);
+    margin:0 0 0.6rem;
+  }
+  .tagline{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:0.8rem;
+    letter-spacing:0.05em;
+    opacity:0.7;
+    margin:0;
+  }
+
+  .tideline{background:var(--sea-deep);}
+  .tideline svg{display:block;width:100%;height:auto;}
+
+  main{max-width:46rem;margin:0 auto;padding:4rem 1.5rem 2rem;}
+  .intro p{font-size:1.05rem;max-width:36rem;}
+
+  .catalog h2{
+    font-family:'Fraunces',serif;
+    font-weight:500;
+    font-size:1.6rem;
+    margin:2.5rem 0 0.3rem;
+  }
+  .catalog .count{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:0.75rem;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:var(--wetsand);
+    margin:0 0 1.75rem;
+  }
+
+  table{width:100%;border-collapse:collapse;}
+  thead th{
+    text-align:left;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:0.68rem;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:var(--wetsand);
+    padding:0.5rem 0.75rem;
+    border-bottom:1px solid rgba(140,121,96,0.4);
+  }
+  tbody tr{border-bottom:1px solid rgba(140,121,96,0.22);transition:background 0.15s ease;}
+  tbody tr:hover{background:rgba(140,121,96,0.08);}
+  tbody td{padding:0.8rem 0.75rem;vertical-align:baseline;}
+  .year{font-family:'IBM Plex Mono',monospace;font-size:0.82rem;color:var(--wetsand);white-space:nowrap;}
+  .title-cell a{
+    font-family:'Fraunces',serif;
+    font-style:italic;
+    font-size:1.05rem;
+    color:var(--ink);
+    text-decoration:none;
+    border-bottom:1px solid transparent;
+  }
+  .title-cell a:hover,.title-cell a:focus-visible{border-bottom-color:var(--driftwood);color:var(--driftwood);}
+  .isbn{font-family:'IBM Plex Mono',monospace;font-size:0.72rem;color:var(--wetsand);white-space:nowrap;}
+
+  .releases-note{margin-top:2rem;font-size:0.95rem;color:var(--wetsand);}
+  .releases-note a{color:var(--driftwood);font-weight:500;}
+
+  footer{
+    background:var(--sea-deep);
+    color:var(--sand);
+    text-align:center;
+    padding:2.5rem 1.5rem;
+    font-size:0.78rem;
+    line-height:1.75;
+    margin-top:3rem;
+  }
+  footer a{color:var(--sand);}
+  footer p{max-width:32rem;margin:0 auto;opacity:0.85;}
+
+  @media (max-width:640px){
+    thead{display:none;}
+    table,tbody,tr,td{display:block;width:100%;}
+    tbody tr{padding:0.85rem 0;}
+    tbody td{padding:0.15rem 0;}
+    .isbn::before{content:"ISBN ";}
+  }
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <p class="eyebrow">Forlaget Den Gamle Poet</p>
+  <p class="lead">På denne side har du mulighed for at læse digte af en gammel poet, der sidder alene ved sin computer et sted i Danmark og meddeler sine tanker til verden.</p>
+  <p class="epigraph">
+    <span>Som fodspor i</span>
+    <span>det våde sand ved</span>
+    <span>havet</span>
+    <span>slægters stille</span>
+    <span>stræb</span>
+  </p>
+  <h1>Digte af Frede Østergaard</h1>
+  <p class="tagline">31 samlinger · 1965–2023 · Frit tilgængelige EPUB-udgaver</p>
+</header>
+
+<div class="tideline" aria-hidden="true">
+  <svg viewBox="0 0 1200 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,40 C150,10 300,70 450,40 C600,10 750,70 900,40 C1050,10 1200,70 1200,40"
+          fill="none" stroke="#c9b79c" stroke-width="1.5" opacity="0.35"/>
+    <ellipse cx="70"  cy="72" rx="5" ry="9" transform="rotate(-10 70 72)"  fill="#c9b79c" opacity="0.85"/>
+    <ellipse cx="155" cy="58" rx="5" ry="9" transform="rotate(12 155 58)" fill="#c9b79c" opacity="0.78"/>
+    <ellipse cx="240" cy="74" rx="5" ry="9" transform="rotate(-9 240 74)" fill="#c9b79c" opacity="0.68"/>
+    <ellipse cx="325" cy="56" rx="5" ry="9" transform="rotate(11 325 56)" fill="#c9b79c" opacity="0.58"/>
+    <ellipse cx="410" cy="73" rx="5" ry="9" transform="rotate(-12 410 73)" fill="#c9b79c" opacity="0.48"/>
+    <ellipse cx="495" cy="57" rx="5" ry="9" transform="rotate(10 495 57)" fill="#c9b79c" opacity="0.4"/>
+    <ellipse cx="580" cy="72" rx="5" ry="9" transform="rotate(-11 580 72)" fill="#c9b79c" opacity="0.32"/>
+    <ellipse cx="665" cy="58" rx="5" ry="9" transform="rotate(9 665 58)" fill="#c9b79c" opacity="0.25"/>
+    <ellipse cx="750" cy="73" rx="5" ry="9" transform="rotate(-10 750 73)" fill="#c9b79c" opacity="0.18"/>
+    <ellipse cx="835" cy="57" rx="5" ry="9" transform="rotate(12 835 57)" fill="#c9b79c" opacity="0.13"/>
+    <ellipse cx="920" cy="72" rx="5" ry="9" transform="rotate(-9 920 72)" fill="#c9b79c" opacity="0.08"/>
+    <ellipse cx="1005" cy="58" rx="5" ry="9" transform="rotate(11 1005 58)" fill="#c9b79c" opacity="0.04"/>
+  </svg>
+</div>
+
+<main>
+  <section class="intro">
+    <p>Dette repository indeholder frit tilgængelige EPUB-udgaver af Frede Østergaards digtsamlinger fra 1965 til 2023. Alle udgaver er validerede EPUB-filer og forsynet med ISBN.</p>
+  </section>
+
+  <section class="catalog">
+    <h2>Katalog</h2>
+    <p class="count">31 digtsamlinger</p>
+    <table>
+      <thead>
+        <tr><th>År</th><th>Titel</th><th>ISBN</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="year">1965</td><td class="title-cell"><a href="https://github.com/forlaget-den-gamlepoet/digte/releases" target="_blank" rel="noopener">Brønden</a></td><td class="isbn">978-87-85590-00-8</td></tr>
+        <tr><td class="year">1968–1970</td><td class="title-cell"><a href="https://github.com/forlaget-den-gamlepoet/digte/releases" target="_blank" rel="noopener">Natur</a></td><td class="isbn">978-87-85590-01-5</td></tr>
+        <tr><td class="year">1972</td><td class="title-cell"><a href="https://github.com/forlaget-den-gamlepoet/digte/releases" target="_blank" rel="noopener">Halvfjerdserbrun</a></td><td class="isbn">978-87-85590-02-2</td></tr>
+        <tr><td class="year">1980–1983</td><td class="title-cell"><a href="https://github.com/forlaget-den-gamlepoet/digte/releases" target="_blank" rel="noopener">Stengrunds tørst</a></td><td class="isbn">978-87-85590-03-9</td></tr>
+        <tr><td class="year">1986</td><td class="title-cell"><a href="https://github.com/forlaget-den-gamlepoet/digte/releases" target="_blank" rel="noopener">Lys i mørket</a></td><td class="isbn">978-87-85590-04-6</td></tr>
+        <tr><td class="year">2001</td><td class="title-cell"><a href="https://github.com/forlaget-den-gamlepoet/digte/releases" target="_blank" rel="noopener">Hjertets rytme</a></td><td class="isbn">978-87-85590-05-3</td></tr>
+        <tr><td class="year">2002</td><td class="title-cell"><a href="https://github.com/forlaget-den-gamlepoet/digte/releases" target="_blank" rel="noopener">Klodeskyer</a></td><td class="isbn">978-87-85590-06-0</td></tr>
+        <tr><td class="year">2002</td><td class="title-cell"><a href="https://github.com/forlaget-den-gamlepoet/digte/releases" target="_blank" rel="noopener">Stilhedens styrke</a></td><td class="isbn">978-87-85590-07-7</td></tr>
+        <tr><td class="year">2002–2003</td><td class="title-cell"><a href="https://github.com/forlaget-den-gamlepoet/digte/releases" target="_blank" rel="noopener">Yrk</a></td><td class="isbn">978-87-85590-08-4</td></tr>
+        <tr><td class="year">2003</td><td class="title-cell"><a href="https://github.com/forlaget-den-gamlepoet/digte/releases" target="_blank" rel="noopener">Konserves</a></td><td class="isbn">978-87-85590-09-1</td></tr>
+        <tr><td class="year">2003</td><td class="title-cell"><a href="https://github.com/forlaget-den-gamlepoet/digte/releases" target="_blank" rel="noopener">Vækst</a></td><td class="isbn">978-87-85590-10-7</td></tr>
+        <tr><td class="year">2003–2004</td><td class="title-cell"><a href="https://github.com/forlaget-den-gamlepoet/digte/releases" target="_blank" rel="noopener">Firs tekster</a></td><td class="isbn">978-87-85590-11-4</td></tr>
+        <tr><td class="year">2004</td><td class="title-cell"><a href="https://github.com/forlaget-den-gamlepoet/digte/releases" target="_blank" rel="noopener">Kun et øjeblik</a></td><td class="isbn">978-87-85590-12-1</td></tr>
+        <tr><td class="year">2004</td><td class="title-cell"><a href="https://github.com/forlaget-den-gamlepoet/digte/releases" target="_blank" rel="noopener">Dagen</a></td><td class="isbn">978-87-85590-13-8</td></tr>
+        <tr><td class="year">2004</td><td class="title-cell"><a href="https://github.com/forlaget-den-gamlepoet/digte/releases" target="_blank" rel="noopener">Det ender med et smil</a></td><td class="isbn">978-87-85590-14-5</td></tr>
+        <tr><td class="year">2004</td><td class="title-cell"><a href="https://github.com/forlaget-den-gamlepoet/digte/releases" target="_blank" rel="noopener">Vejen</a></td><td class="isbn">978-87-85590-15-2</td></tr>
+        <tr><td class="year">2004</td><td class="title-cell"><a href="https://github.com/forlaget-den-gamlepoet/digte/releases" target="_blank" rel="noopener">Til Dig</a></td><td class="isbn">978-87-85590-16-9</td></tr>
+        <tr><td class="year">2004</td><td class="title-cell"><a href="https://github.com/forlaget-den-gamlepoet/digte/releases" target="_blank" rel="noopener">Undervejs</a></td><td class="isbn">978-87-85590-17-6</td></tr>
+        <tr><td class="year">2004–2005</td><td class="title-cell"><a href="https://github.com/forlaget-den-gamlepoet/digte/releases" target="_blank" rel="noopener">Filibuster</a></td><td class="isbn">978-87-85590-18-3</td></tr>
+        <tr><td class="year">2004–2010</td><td class="title-cell"><a href="https://github.com/forlaget-den-gamlepoet/digte/releases" target="_blank" rel="noopener">Perler på snor</a></td><td class="isbn">978-87-85590-19-0</td></tr>
+        <tr><td class="year">2005</td><td class="title-cell"><a href="https://github.com/forlaget-den-gamlepoet/digte/releases" target="_blank" rel="noopener">Billedbogen</a></td><td class="isbn">978-87-85590-20-6</td></tr>
+        <tr><td class="year">2005</td><td class="title-cell"><a href="https://github.com/forlaget-den-gamlepoet/digte/releases" target="_blank" rel="noopener">Hjertets slag</a></td><td class="isbn">978-87-85590-21-3</td></tr>
+        <tr><td class="year">2005</td><td class="title-cell"><a href="https://github.com/forlaget-den-gamlepoet/digte/releases" target="_blank" rel="noopener">Grib</a></td><td class="isbn">978-87-85590-22-0</td></tr>
+        <tr><td class="year">2005</td><td class="title-cell"><a href="https://github.com/forlaget-den-gamlepoet/digte/releases" target="_blank" rel="noopener">Overvejelser</a></td><td class="isbn">978-87-85590-23-7</td></tr>
+        <tr><td class="year">2005–2006</td><td class="title-cell"><a href="https://github.com/forlaget-den-gamlepoet/digte/releases" target="_blank" rel="noopener">Skygger</a></td><td class="isbn">978-87-85590-24-4</td></tr>
+        <tr><td class="year">2005–2006</td><td class="title-cell"><a href="https://github.com/forlaget-den-gamlepoet/digte/releases" target="_blank" rel="noopener">Tegn</a></td><td class="isbn">978-87-85590-25-1</td></tr>
+        <tr><td class="year">2006</td><td class="title-cell"><a href="https://github.com/forlaget-den-gamlepoet/digte/releases" target="_blank" rel="noopener">Jordens liv</a></td><td class="isbn">978-87-85590-26-8</td></tr>
+        <tr><td class="year">2006</td><td class="title-cell"><a href="https://github.com/forlaget-den-gamlepoet/digte/releases" target="_blank" rel="noopener">Opdagelsesrejse</a></td><td class="isbn">978-87-85590-27-5</td></tr>
+        <tr><td class="year">2006–2009</td><td class="title-cell"><a href="https://github.com/forlaget-den-gamlepoet/digte/releases" target="_blank" rel="noopener">Månelys</a></td><td class="isbn">978-87-85590-28-2</td></tr>
+        <tr><td class="year">2010–2011</td><td class="title-cell"><a href="https://github.com/forlaget-den-gamlepoet/digte/releases" target="_blank" rel="noopener">Aftryk</a></td><td class="isbn">978-87-85590-29-9</td></tr>
+        <tr><td class="year">2004–2023</td><td class="title-cell"><a href="https://github.com/forlaget-den-gamlepoet/digte/releases" target="_blank" rel="noopener">Landskab</a></td><td class="isbn">978-87-85590-30-5</td></tr>
+      </tbody>
+    </table>
+    <p class="releases-note">Alle EPUB-filer kan hentes under <a href="https://github.com/forlaget-den-gamlepoet/digte/releases" target="_blank" rel="noopener">Releases →</a></p>
+  </section>
+</main>
+
+<footer>
+  <p>Teksterne er fortsat beskyttet af ophavsret. EPUB-udgaverne stilles gratis til rådighed efter aftale med forfatteren og/eller rettighedshaverne. Videredistribution er kun tilladt i uændret form og med denne meddelelse bevaret.<br>
+  © Frede Østergaard / Forlaget Den Gamle Poet</p>
+</footer>
+
+</body>
+</html>
