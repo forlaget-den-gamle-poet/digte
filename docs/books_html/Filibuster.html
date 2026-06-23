@@ -1,0 +1,2042 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filibuster - Frede Østergaard</title>
+    <style>
+        :root {
+            --bg-color: #fdfdfc;
+            --text-color: #222;
+            --link-color: #555;
+        }
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+        img.cover {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 4rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .title-page, .colophon, .author-info, .other-collections {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        .title-page h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .title-page .subtitle {
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        .colophon {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        nav.toc {
+            margin-bottom: 4rem;
+            background: #f4f4f4;
+            padding: 1.5rem;
+            border-radius: 4px;
+        }
+        nav.toc h2 {
+            margin-top: 0;
+        }
+        nav.toc ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav.toc li {
+            margin-bottom: 0.5rem;
+        }
+        nav.toc a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+        nav.toc a:hover {
+            text-decoration: underline;
+        }
+        .poem {
+            margin-bottom: 5rem;
+            page-break-inside: avoid;
+        }
+        .poem h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 0.5rem;
+        }
+        .poem-body {
+            white-space: pre-wrap; /* Crucial: preserves your line breaks */
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        .author-photo {
+            width: 150px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ddd;
+            margin: 3rem 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="cover" src="../covers/web_Filibuster.png" alt="Omslag for Filibuster">
+        <div class="title-page">
+            <h1>Filibuster</h1>
+            <div class="subtitle">Digte</div>
+            <div class="author">Frede Østergaard</div>
+        </div>
+        <hr>
+
+        <div class="colophon">
+            <h2>Kolofon</h2>
+            <p><strong>Filibuster</strong><br>
+            &copy; Frede Østergaard<br>
+            Digtene er skrevet: 2004–2005<br>
+            Digital Web-udgave udgivet i 2026<br>
+            Forlaget Den Gamle Poet<br>
+            <br>
+            Digitale udgaver og kildefiler:<br>
+            <a href="https://github.com/forlaget-den-gamle-poet/digte">github.com/forlaget-den-gamle-poet/digte</a><br>
+            <br>
+            Alle rettigheder forbeholdes</p>
+        </div>
+        <hr>
+        <nav class="toc">
+            <h2>Indholdsfortegnelse</h2>
+            <ul>
+                <li><a href="#poem-0">Ært</a></li>
+                <li><a href="#poem-1">Ødeland </a></li>
+                <li><a href="#poem-2">Aldrig mere</a></li>
+                <li><a href="#poem-3">Bag glasset</a></li>
+                <li><a href="#poem-4">Bål</a></li>
+                <li><a href="#poem-5">Dørskilt</a></li>
+                <li><a href="#poem-6">Dagene </a></li>
+                <li><a href="#poem-7">Der var engang</a></li>
+                <li><a href="#poem-8">Derfor</a></li>
+                <li><a href="#poem-9">Drøm</a></li>
+                <li><a href="#poem-10">Eftersyn</a></li>
+                <li><a href="#poem-11">Enten eller  </a></li>
+                <li><a href="#poem-12">Fællesskab</a></li>
+                <li><a href="#poem-13">Filibuster</a></li>
+                <li><a href="#poem-14">Flugt</a></li>
+                <li><a href="#poem-15">Flugt</a></li>
+                <li><a href="#poem-16">Flæsk</a></li>
+                <li><a href="#poem-17">Forståelse</a></li>
+                <li><a href="#poem-18">Forsvar</a></li>
+                <li><a href="#poem-19">Fra et mellemrum</a></li>
+                <li><a href="#poem-20">Frelst</a></li>
+                <li><a href="#poem-21">Fremskridt</a></li>
+                <li><a href="#poem-22">Fugl</a></li>
+                <li><a href="#poem-23">Gartneren</a></li>
+                <li><a href="#poem-24">Grænser</a></li>
+                <li><a href="#poem-25">Gradbøjning</a></li>
+                <li><a href="#poem-26">Gyldent</a></li>
+                <li><a href="#poem-27">Havn</a></li>
+                <li><a href="#poem-28">Hvem</a></li>
+                <li><a href="#poem-29">Hvorfor</a></li>
+                <li><a href="#poem-30">I form</a></li>
+                <li><a href="#poem-31">I parken</a></li>
+                <li><a href="#poem-32">Indlejret</a></li>
+                <li><a href="#poem-33">Indsigt</a></li>
+                <li><a href="#poem-34">Ingen </a></li>
+                <li><a href="#poem-35">Kæde </a></li>
+                <li><a href="#poem-36">Kakofoni</a></li>
+                <li><a href="#poem-37">Kommunikade</a></li>
+                <li><a href="#poem-38">Kun </a></li>
+                <li><a href="#poem-39">Længsel</a></li>
+                <li><a href="#poem-40">Lag</a></li>
+                <li><a href="#poem-41">Lagdelt</a></li>
+                <li><a href="#poem-42">Lavine </a></li>
+                <li><a href="#poem-43">Liv</a></li>
+                <li><a href="#poem-44">Midvinter</a></li>
+                <li><a href="#poem-45">Misundelse</a></li>
+                <li><a href="#poem-46">Nødvendighed</a></li>
+                <li><a href="#poem-47">Nøglen</a></li>
+                <li><a href="#poem-48">Nytolkning </a></li>
+                <li><a href="#poem-49">Nær dig</a></li>
+                <li><a href="#poem-50">Og de levede</a></li>
+                <li><a href="#poem-51">Og haletudsedag</a></li>
+                <li><a href="#poem-52">Opgør</a></li>
+                <li><a href="#poem-53">Ord </a></li>
+                <li><a href="#poem-54">På vej</a></li>
+                <li><a href="#poem-55">Rapport fra</a></li>
+                <li><a href="#poem-56">Rolleskift</a></li>
+                <li><a href="#poem-57">Søger</a></li>
+                <li><a href="#poem-58">Scenefolk</a></li>
+                <li><a href="#poem-59">Se</a></li>
+                <li><a href="#poem-60">Sent</a></li>
+                <li><a href="#poem-61">Silkepapir</a></li>
+                <li><a href="#poem-62">Skygger</a></li>
+                <li><a href="#poem-63">Snegl</a></li>
+                <li><a href="#poem-64">Som om</a></li>
+                <li><a href="#poem-65">Spor </a></li>
+                <li><a href="#poem-66">Tanker  </a></li>
+                <li><a href="#poem-67">Tidens vold</a></li>
+                <li><a href="#poem-68">Tolerance</a></li>
+                <li><a href="#poem-69">Tro</a></li>
+                <li><a href="#poem-70">Trækfugl</a></li>
+                <li><a href="#poem-71">Ubundet</a></li>
+                <li><a href="#poem-72">Udsættelse</a></li>
+                <li><a href="#poem-73">Udtryk</a></li>
+                <li><a href="#poem-74">Udvikling</a></li>
+                <li><a href="#poem-75">Vækst</a></li>
+                <li><a href="#poem-76">Venteværelset</a></li>
+                <li><a href="#poem-77">Vilkår</a></li>
+                <li><a href="#poem-78">Våbenhvile</a></li>
+                <li><a href="#poem-79">Ørkenvandring</a></li>
+            </ul>
+        </nav>
+        <hr>
+
+        <article class="poem" id="poem-0">
+            <h2>Ært</h2>
+            <div class="poem-body">
+En hård bekymring
+triller ud af natten og
+falder til ro på
+puden
+Prinsessen på
+ærten forstod sig på
+den slags
+Gudved hvad der
+venter derude
+
+
+
+Februar 2005</div>
+        </article>
+
+        <article class="poem" id="poem-1">
+            <h2>Ødeland </h2>
+            <div class="poem-body">
+Glæde sætter man ikke i
+banken
+Man bruger så meget
+man kan og 
+deler resten ud
+
+
+
+Januar 2005
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-2">
+            <h2>Aldrig mere</h2>
+            <div class="poem-body">
+Det sker alligevel og
+alle finder en lomme at
+gemme hænder i
+eller en dagsorden
+der er villig til
+at sluge ethvert tilløb til
+protest
+Øjne studerer
+detaljer i et billede der
+for en tid får
+betydning fordi ingen
+kan udholde at
+hæve blikket
+Vi siger aldrig mere og
+mener det
+
+
+
+
+Januar 2005
+          </div>
+        </article>
+
+        <article class="poem" id="poem-3">
+            <h2>Bag glasset</h2>
+            <div class="poem-body">
+Et hudnært derudes
+regler
+Et enkelt fejltrins
+dødelighed 
+lige for og
+ingen har spurgt 
+end ikke om
+livets vilje til
+liv
+At være eller
+ikke
+på sin side af
+glasset
+
+
+
+
+Februar 2005
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-4">
+            <h2>Bål</h2>
+            <div class="poem-body">
+Vi er som
+gløder i mørket
+
+lysende punkter i en
+uudgrundelig plan
+
+uden andet anker end
+troen på livet
+
+længslen efter 
+kærlighed  og
+
+den fælles erindring om
+sammenhæng
+
+
+
+Januar 2005
+
+
+
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-5">
+            <h2>Dørskilt</h2>
+            <div class="poem-body">
+Kom ikke her med
+jeres selvmedlidenhed
+Vi har
+
+
+
+
+Januar 2005
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-6">
+            <h2>Dagene </h2>
+            <div class="poem-body">
+Dagene går igennem 
+os og afsætter deres 
+spor 
+Solen står op og 
+solen går ned i 
+kaskader af foretagsomt lys 
+Natten lytter efter 
+stemmer i mørket og 
+flænges af et 
+ugleskrig i 
+skoven 
+
+
+
+
+Januar 2005
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-7">
+            <h2>Der var engang</h2>
+            <div class="poem-body">
+Der var engang og
+stadig er vejen vel 
+kantet af fristelser der 
+venter på den
+næste og  mellem de
+vejfarende  gemmer sig fortsat de
+hjælpere der kender til 
+prøver for værdighed
+
+men er prinsen eller
+prinsessen  stadig  kampen værd
+eller det  halve riges  
+gyldne krone
+
+på vej mod et mål  svøbt i
+drømme ved 
+regnbuens fod
+
+
+
+
+
+
+Januar 2005
+          </div>
+        </article>
+
+        <article class="poem" id="poem-8">
+            <h2>Derfor</h2>
+            <div class="poem-body">
+Du holdt muligheden
+i dine hænder men
+brugte den aldrig
+
+Du blev kaldt på men
+kom ikke
+
+Dine Ãøne registrerede
+verden men du så den
+ikke
+
+Du hørte ikke lydene
+som ytringer af
+liv
+
+Du forstod aldrig at
+selvom vi er mange er 
+vi én
+
+
+
+
+Februar 2005
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-9">
+            <h2>Drøm</h2>
+            <div class="poem-body">
+Mørket åbner sig for 
+dine drømme og du 
+flyver i lys uden 
+skygger balancerende ad
+knivsægge for at 
+plukke blomster  af
+de glemtes grave
+Du fylder favnen med
+tunge buketter og
+lader duften svare dit
+savn
+Under de sovende
+træer samler du
+smerten af duggen , hastigt 
+inden lyset
+tørrer den ind
+Svøbt i
+anelser  bringer du 
+høsten i hus
+
+
+
+Januar 2005</div>
+        </article>
+
+        <article class="poem" id="poem-10">
+            <h2>Eftersyn</h2>
+            <div class="poem-body">
+Vil man kigge sig
+selv i kortene kan
+man begynde med at se 
+op over sine meninger og
+anskuelser  til det
+man gør
+
+
+Februar 2005
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-11">
+            <h2>Enten eller  </h2>
+            <div class="poem-body">
+Selvom jeg ikke vil er 
+jeg nødt til at gøre det 
+Lader jeg være er 
+Helvede løs og jeg 
+kommer til at 
+sidde det af  i 
+umindelige tider ,
+bliver sat uden for 
+døren og set skævt til af 
+det gode borgerskab der 
+ikke har besvær med 
+kalkede facader 
+
+Hvis jeg så bare 
+havde tøjet 
+
+
+
+
+Februar 2005
+          </div>
+        </article>
+
+        <article class="poem" id="poem-12">
+            <h2>Fællesskab</h2>
+            <div class="poem-body">
+Også vi rækker
+efter lyset
+blomstrer
+sætter vore frø
+
+Vi kender til de hårde lag 
+vantrivslen i skyggen
+kuldens ubøjelighed
+
+Sammen  forkrøbler vi  i 
+fjendtlige egne
+Slås ned af himlens
+vold
+
+De lader sig så men
+høster ikke og
+har intet andet udtryk for
+deres tro
+deres håb
+deres kærligheden 
+end væksten 
+blomstringen 
+
+den flygtigste duft
+
+
+
+
+Januar 2004
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-13">
+            <h2>Filibuster</h2>
+            <div class="poem-body">
+Jeg er ved at være der,
+er tæt på at være klar men
+har også arbejdet med det,
+studeret,
+gjort alle de
+indledende øvelser
+Den karakteristiske gangart
+er let i en af dens 
+variationer
+Tøjet har jeg med undtagelse af 
+kasketten
+Tænderne  i kategorien
+egne går an selvom der
+er flere muligheder med 
+de andre
+De vrissende bemærkninger 
+de aggressive blikke
+klarer jeg med et 
+medfødt talent og
+så er der snakken,
+de omstændelige udredninger
+Beretningerne om fortiden som
+jeg har lært udenad for at kunne
+gentage dem hvor som helst og
+de livskloge betragtninger jeg 
+henter fra udvalgte sider på 
+nettet
+Det sværeste har vist sig at
+være den spontane
+tiltale af fremmede men det
+kommer nok
+I går gjorde jeg pungen
+klar med et par sedler jeg
+krøllede og blandede  med 
+en håndfuld mønter
+
+
+
+
+
+Januar 2005
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-14">
+            <h2>Flugt</h2>
+            <div class="poem-body">
+Natten gemt i
+søen
+Overfladens tætte
+spejl
+Din hånd  i  
+lommen
+Glas i dit
+blik
+
+Så hør dog dagen der
+skriger efter
+rovfuglen over skoven
+
+
+
+
+Januar 2005
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-15">
+            <h2>Flugt</h2>
+            <div class="poem-body">
+Tæt over havet
+en trækkende fugleflok
+Mørkets flygtninge
+
+
+
+
+Januar 2005
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-16">
+            <h2>Flæsk</h2>
+            <div class="poem-body">
+Tænk om man kunne
+bytte plads med nogen,
+gå inde i Dronning Margrethe og
+se venligt på folket med 
+forgyldt blik og
+måske tillade sig at
+ændre en smule på rollen og 
+læse i avisen  næste dag at 
+majestæten havde 
+drukket sig fuld til en
+middag og skældt en 
+ministerfrue ud
+Hun skulle vel så være inde i 
+mig imens og 
+gudved hvad hun ville
+tænke ved det for 
+hun har vel aldrig spist 
+flæsk eller gule ærter og 
+drukket en  hel flok bajere til
+Måske ville hun blive så 
+vild med sofaen bagefter at 
+hun nægtede at 
+bytte tilbage  og 
+det ville vel så betyde  at
+jeg blev nødt til at 
+uddele et par ordner eller
+modtage nogen ambassadører inden
+jeg kunne trække mig tilbage til 
+hvad det nu er 
+en dronning  trækker sig 
+tilbage til
+
+
+Hvad mon hun laver?
+
+
+
+
+
+
+Januar 2005
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-17">
+            <h2>Forståelse</h2>
+            <div class="poem-body">
+Man kan vælge at
+være et andet sted end
+kroppen -
+og den tager vel også
+sine ture
+
+
+
+
+Februar 2005
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-18">
+            <h2>Forsvar</h2>
+            <div class="poem-body">
+Jeg har pakket det
+hele ned i brunt papir
+med snor omkring
+I dag lukker vi
+op
+Klipper snore og
+lader omslag falde og
+alt er der stadig også 
+det jeg havde glemt
+Noget er anderledes end
+jeg husker men
+det hele skal
+ud og der er
+ikke længere frygt i
+mit hjerte
+
+
+Februar 2005</div>
+        </article>
+
+        <article class="poem" id="poem-19">
+            <h2>Fra et mellemrum</h2>
+            <div class="poem-body">
+Det er ikke de
+tilstedeværende der
+falder i øjnene men
+mellemrummene
+
+Oceanerne
+
+Ørknerne
+
+De hårfine korridorer 
+
+Et sugende vakuum
+
+Intensiteten indtil 
+øerne har
+fundet  form
+
+
+
+
+December 2004
+          </div>
+        </article>
+
+        <article class="poem" id="poem-20">
+            <h2>Frelst</h2>
+            <div class="poem-body">
+Hun talte om
+frelsen som om
+hun tilhÃ¸rte en
+eksklusiv art
+Og se, hun var virkelig 
+en af menneskeracen,
+umistelig som hver og
+en men det var ikke
+det hun talte om og
+det var ikke glæden
+over livet der fyldte
+hendes hjerte
+
+
+
+
+Januar 2005
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-21">
+            <h2>Fremskridt</h2>
+            <div class="poem-body">
+Mørkets fremskridt er
+skridt mod lyset
+
+
+Februar 2005</div>
+        </article>
+
+        <article class="poem" id="poem-22">
+            <h2>Fugl</h2>
+            <div class="poem-body">
+Fuglespor i sneen
+En henslængt knipling 
+herfra til intet
+En flygtig  bemærkning
+stemplet i tid
+
+
+
+Januar 2005
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-23">
+            <h2>Gartneren</h2>
+            <div class="poem-body">
+Hun sår
+udvalgte ord i
+klargjorte bede
+
+Væksten klarer de
+selv
+
+
+
+Januar 2004
+          </div>
+        </article>
+
+        <article class="poem" id="poem-24">
+            <h2>Grænser</h2>
+            <div class="poem-body">
+Det er som med
+stater
+Indenfor egne grænser
+kan du skabe din
+egen lov
+men krænker den andres
+territorier bliver der
+krig
+
+
+
+
+Januar 2005
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-25">
+            <h2>Gradbøjning</h2>
+            <div class="poem-body">
+Det er koldt
+derude
+men koldere her og
+koldest i mit
+hjerte
+
+Mit smil vender
+nedad og har
+tabt målet af sigte
+
+
+
+
+Januar 2005
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-26">
+            <h2>Gyldent</h2>
+            <div class="poem-body">
+Vægten af himlen
+tynger de
+sorte træer
+Jorden har overgivet sig til
+pløren men 
+længslen  gennemborer de 
+snøftende skyer og
+finder vej fra
+
+grå kapsel  til
+gyldent hav
+
+
+
+
+
+Januar 2005
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-27">
+            <h2>Havn</h2>
+            <div class="poem-body">
+Skibe har brug for
+havne
+Havet lader sig
+bevæge og
+søger  sin 
+egen ro
+
+
+
+Februar 2005</div>
+        </article>
+
+        <article class="poem" id="poem-28">
+            <h2>Hvem</h2>
+            <div class="poem-body">
+Jeg ved vel
+hvem jeg er
+
+Vinden mættet
+af din ild
+
+Månens tårer i
+den vidneløse
+nat
+
+Under havets
+blødende overflade
+
+I lydene af 
+kløvermarkens
+rigdom
+
+Jeg ved  vel men
+leder stadig efter et
+spørgsmål der
+giver svar
+
+Et blik der 
+finder mening
+
+
+
+Januar 2005
+          </div>
+        </article>
+
+        <article class="poem" id="poem-29">
+            <h2>Hvorfor</h2>
+            <div class="poem-body">
+Der er dagens drømme
+og nattens
+Der er håbet og
+tvivlen langs den
+slagne vej
+Der er lysten og
+pligten,
+viljen til blomstring  og
+driften mod den spinkle
+tros desperation
+Angsten der  hudløst
+famler ved et hvorfor
+Hvorfor skal det lige netop 
+være mig 
+
+
+
+Februar 2005</div>
+        </article>
+
+        <article class="poem" id="poem-30">
+            <h2>I form</h2>
+            <div class="poem-body">
+Jeg er enormt god til at
+være sur,
+muggen er jo ingen sag, det
+har jeg kunnet
+længe men  min 
+beherskelse af
+syrlighed  er nu så 
+fuldt udviklet at den  
+nærmest ligger udenpå som 
+et panser-
+i hvert fald hænger 
+mundvigene permanent  
+for slet ikke at
+tale om  øjnene der 
+stikker som kanyler når 
+de ikke lige er
+indstillet på   
+gennemsigtig eller 
+fjern
+Under træningen er det en 
+god ide at tage 
+udgangspunkt i sin 
+sårbarhed og vende den til en
+følsom nærtagenhed som 
+man siden kan krydre med  
+passende grader af
+fornærmethed og derved 
+efterhånden snige sig ind på
+idealet
+Med tiden vil man 
+kunne spille på
+et fuldt register som 
+det er vigtigt at
+holde ved lige 
+
+For tiden øver jeg mig i
+mopset 
+
+
+
+
+December 2004
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-31">
+            <h2>I parken</h2>
+            <div class="poem-body">
+Mens natten holder
+vejret og lytter til
+tunge dryp fra
+træet
+fanger  dufte et
+sølvrefleks og
+lægger sig tæt
+til mørket
+
+Der er noget på
+færde her og det
+sviende håb der
+krydser stien er
+ikke alene
+
+
+
+
+Februar 2005
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-32">
+            <h2>Indlejret</h2>
+            <div class="poem-body">
+Mågeskrig og lyden af
+blæsten
+Havet og solens
+reflekser indlejret i blåt
+Selv huden husker
+vinden og læberne den
+svage smag af
+salt
+Løsrevet som et
+lyksaligt varsel om
+livets ukuelige kraft og
+din hånd der engang
+rakte ud efter min
+
+
+
+
+
+Januar 2004
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-33">
+            <h2>Indsigt</h2>
+            <div class="poem-body">
+Brudstykker
+tilløb til sammenhænge
+i fortegnede detaljer
+glemte indsigter og i
+et svimlende nu den
+ubøjelige sandhed
+
+
+
+
+Februar 2005
+          </div>
+        </article>
+
+        <article class="poem" id="poem-34">
+            <h2>Ingen </h2>
+            <div class="poem-body">
+Kun du så skovens 
+smukkeste blomst men 
+ingen så dig 
+Ingen målte styrken af 
+dit blik og 
+ingen hørte dit 
+hjertes beslutsomhed 
+Ingen så din hånd da 
+den trak sig tilbage og 
+nøjedes med at 
+strejfe et enkelt blad 
+
+
+
+
+Januar 2005
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-35">
+            <h2>Kæde </h2>
+            <div class="poem-body">
+Og sådan løber tiden som 
+en lang kæde uden ende eller 
+begyndelse 
+Og den løber gennem os 
+uden at sætte hastigheden ned eller 
+lade sig sinke 
+Og den henter sin kraft der 
+hvor kraften er og lader 
+intet tilbage 
+
+
+
+Januar 2005
+
+
+
+
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-36">
+            <h2>Kakofoni</h2>
+            <div class="poem-body">
+Det kan være svært nok at
+forstå hvad der foregår
+selvom der er ord nok
+Flove skilte forsøger at
+give mening men har uheld med
+besætningen
+Sværme af løsrevne
+citater svirrer over
+hustagene inden de
+slår ned og danner
+uigennemtrængelige
+tekster 
+Forvildede ord flakser
+omkring og prøver at
+slå til
+
+
+
+
+December 2004
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-37">
+            <h2>Kommunikade</h2>
+            <div class="poem-body">
+Talestømmens hastighed er
+nu så høj at selv den
+talendes hjerne står af
+med det resultat at
+ordene farer  omkring
+uden at vide hvor de skal
+hen og uden forståelse af
+den konstruktion der 
+holder dem fast
+
+
+
+Januar 2004
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-38">
+            <h2>Kun </h2>
+            <div class="poem-body">
+Kun i glimt ser vi 
+ud over vore grænser og 
+kun i halvmørke pauser 
+ser vi scenen blottet for 
+kulisser 
+Kun i forbifarten ser vi 
+de andre som befriet for 
+masker 
+Kun i anelser 
+kommer vi bag på 
+os selv 
+
+
+
+Januar 2005</div>
+        </article>
+
+        <article class="poem" id="poem-39">
+            <h2>Længsel</h2>
+            <div class="poem-body">
+Hun møblerer sin
+længsel,
+hænger gardiner op
+for de søgende
+vinduer
+Lægger tæppe på
+tomheden og
+slår sig ned
+Den spørgende ramme på
+væggen må
+vente
+
+Her kan man
+leve
+
+
+
+Januar 2005
+               </div>
+        </article>
+
+        <article class="poem" id="poem-40">
+            <h2>Lag</h2>
+            <div class="poem-body">
+Lag på lag som
+bladene i et
+træs krone og
+langt inde de
+bærende elementer der
+ikke længere står til at
+ændre
+
+Og vinden går over det og
+end ikke en anelse lades
+tilbage
+
+
+
+
+Januar 2004
+          </div>
+        </article>
+
+        <article class="poem" id="poem-41">
+            <h2>Lagdelt</h2>
+            <div class="poem-body">
+Sandheden ligger
+uskadt under
+vore ord
+
+
+
+
+Februar 2004
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-42">
+            <h2>Lavine </h2>
+            <div class="poem-body">
+Søvnløs lader natten sig 
+rulle sammen for 
+fødderne af den kolde 
+morgen 
+
+Upåagtede spændinger 
+holder endnu bygningen oppe over 
+sneskredets mulighed 
+
+Den skarpe sol overser 
+fine furers net og 
+reflekteres af 
+glatte ruders uforstand 
+
+Fredløse jages uden
+ophør
+
+
+
+Januar 2005</div>
+        </article>
+
+        <article class="poem" id="poem-43">
+            <h2>Liv</h2>
+            <div class="poem-body">
+Det begynder med
+liv og ender med
+liv
+Døden er hvor
+intet er 
+Selv ting bliver
+levende under dit 
+blik
+
+
+
+
+Januar 2005
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-44">
+            <h2>Midvinter</h2>
+            <div class="poem-body">
+Den kalkede
+himmels  låg over  
+jorden 
+
+Hvor mange vintre
+endnu?
+
+Under hegnet spirer
+trodsige vækster med
+lyset
+
+
+
+
+Februar 2005
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-45">
+            <h2>Misundelse</h2>
+            <div class="poem-body">
+Misundelse bygger oftest på
+en fejltænkning
+Der går intet fra mig fordi
+det går godt  for 
+en anden. Og 
+ret beset er det vel en
+gevinst for alle 
+når gruppen tilføres
+held
+
+
+
+Januar 2005</div>
+        </article>
+
+        <article class="poem" id="poem-46">
+            <h2>Nødvendighed</h2>
+            <div class="poem-body">
+Ligesom små kugler
+der ruller gennem 
+lange ledninger og
+triller ud i modvillige tragter
+Ligesom slidte kæder
+der slæber over
+tiden og lægger sig om
+halsen på intetanende
+Ligesom en nødvendighed
+der ikke vil vide af
+hensyn  men insisterer på
+en ret ingen har forsynet med
+segl eller underskrift
+Ligesom en vægt der
+tynger det  allerede
+tyngede med hele sin 
+meningsløshed
+
+
+Februar 2005</div>
+        </article>
+
+        <article class="poem" id="poem-47">
+            <h2>Nøglen</h2>
+            <div class="poem-body">
+Ord kan åbne
+døre
+Og låse dem
+
+Nu ved jeg at
+jeg kun har
+mig selv og at det
+slår til
+
+
+
+Januar 2005
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-48">
+            <h2>Nytolkning </h2>
+            <div class="poem-body">
+Hun har tændt lampen og 
+skiller forsigtigt 
+billedet ad 
+Baggrunden 
+de mellemste partier og 
+forgrundens detaljer for sig 
+Tæt ved kanten finder hun 
+en lille person skjult af 
+omstændigheder 
+Hun bliver lagt for sig selv og 
+skal tolkes om 
+
+
+
+
+Januar 2005
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-49">
+            <h2>Nær dig</h2>
+            <div class="poem-body">
+Det kunne have været
+så godt hvis
+
+vi havde kunnet
+nære os men det
+
+kunne vi ikke, sådan 
+
+er det med
+os
+
+
+
+
+
+Januar 2004
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-50">
+            <h2>Og de levede</h2>
+            <div class="poem-body">
+Hvis jeg  rækker 
+hånden frem
+vil du  så 
+sætte eventyret i 
+gang og
+lade spillet
+gå til ende, se
+
+det halve riges
+krone glimter
+mat i morgenlyset
+
+
+
+Januar 2005
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-51">
+            <h2>Og haletudsedag</h2>
+            <div class="poem-body">
+Uigennemsigtige sump -
+
+men studerer man den
+fimrende suppe finder man
+de samme typer som 
+man kender så godt fra sin
+egen andedam
+
+
+
+
+Januar 2005
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-52">
+            <h2>Opgør</h2>
+            <div class="poem-body">
+Dommen er hård over det 
+man ikke vil forstå
+
+
+
+
+Januar 2005
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-53">
+            <h2>Ord </h2>
+            <div class="poem-body">
+Sådan faldt ordene og 
+så var det sagt 
+
+som om de ord kunne
+skabe nyt 
+
+som om de  ord  kunne
+ændre alt 
+
+ord er vel bare 
+lyde vi har tildelt en 
+særlig funktion 
+
+
+
+Januar 2004</div>
+        </article>
+
+        <article class="poem" id="poem-54">
+            <h2>På vej</h2>
+            <div class="poem-body">
+I grunden er man altid
+på vej også selvom man 
+ingen steder skal hen og
+har man sat sig et 
+mål er der samtidig mere
+på færde end man
+er bevidst om
+Jamen der bliver ikke
+meget tilbage, sagde
+frisøren alarmeret, da
+jeg bad ham klippe
+mig kort, uden at
+forstå at det er mit 
+rejselook for tiden
+sammen med den 
+slappe hud og kroppens 
+ændrede holdning
+Lige nu er der fart over 
+feltet 
+Jeg er på vej rundt om 
+solen og desuden i 
+stormløb frem mod en 
+rund fødselsdag der
+alvorligt truer min 
+ungdom
+Jeg skulle gerne på
+apoteket inden lukketid og
+det er jo  ingenting i
+forhold til den 
+store rejse der  når  som
+helst kan bringe mig
+ud af syne på vej mod et
+mål ingen har
+stedfæstet endnu
+
+
+
+
+December 2004
+          </div>
+        </article>
+
+        <article class="poem" id="poem-55">
+            <h2>Rapport fra</h2>
+            <div class="poem-body">rumvæsen
+
+Advarsel
+Planterne har rod
+Dyrene territorier
+Menneskene forfølger
+højere mål i forsøget på at
+få magt over noget de
+kalder Himmerigs Rige
+
+
+
+
+Februar 2005</div>
+        </article>
+
+        <article class="poem" id="poem-56">
+            <h2>Rolleskift</h2>
+            <div class="poem-body">
+Den største del af
+tiden har jeg  brugt på at 
+forme det billede jeg
+troede var ønsket i 
+stedet for at frigøre det der
+allerede lå parat 
+Alligevel er det lykkedes
+det at røbe sit omrids og
+er jeg heldig  slipper det
+i tide løs fra sin kunstige
+plageånd så det kan
+indtage scenen før
+sidste akt
+
+
+
+
+Januar 2005</div>
+        </article>
+
+        <article class="poem" id="poem-57">
+            <h2>Søger</h2>
+            <div class="poem-body">
+Han bladrer rastløst i
+tiden  men finder det
+ikke
+Gulnede sider lader sig
+vel skimme men
+lukker ikke op
+Det må findes  som 
+et ekko af løftet på 
+første side
+
+En isflages
+uimodsigelighed
+
+Mangler der et blad?
+
+Så bare lyden af
+et hjerte
+
+
+
+
+Februar 2005</div>
+        </article>
+
+        <article class="poem" id="poem-58">
+            <h2>Scenefolk</h2>
+            <div class="poem-body">
+Vi ser
+Vi hører
+Vi føler med
+sanser der loyalt
+tilpasser verden til
+vort indre landskab
+som scenearbejdere der
+utrætteligt forsøger at synliggøre
+instruktørens visioner
+
+
+
+Februar 2005</div>
+        </article>
+
+        <article class="poem" id="poem-59">
+            <h2>Se</h2>
+            <div class="poem-body">
+Landskabets skønhed
+Evigheden bekræfter 
+igen sit løfte
+
+
+
+Januar 2005
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-60">
+            <h2>Sent</h2>
+            <div class="poem-body">
+Ingen tvivl om
+din livskraft
+men det er let
+at se at en anden har
+fat i den lange ende
+
+
+
+Januar 2005
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-61">
+            <h2>Silkepapir</h2>
+            <div class="poem-body">
+Bagefter var det
+let at forstå at
+det var revnet men før
+havde han trygt stolet på
+at det var en mur
+naturens orden
+hele civilisationens
+tyngde
+
+
+
+
+Februar 2005
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-62">
+            <h2>Skygger</h2>
+            <div class="poem-body">
+Vandring mellem
+skygger 
+Det grå skyggelands
+alléer af levende der
+før var mennesker med
+rigtige håb og længsler
+Hvor glæden og 
+forventningen  flød  frit mellem 
+åbne favne og          
+kærligheden var andet end  
+en  antydet bort i
+det grå
+Sin egen længsel
+kender hun ikke men
+når hun ser fjernsyn
+sker det hendes øjne
+løber i vand
+
+Bare ikke se på nogen
+
+
+
+
+
+Februar 2005
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-63">
+            <h2>Snegl</h2>
+            <div class="poem-body">
+Hun var som en
+snegl der kravler til
+vejrs i den højeste
+poppel og flyver af sted på
+erfarne vinger
+I den døende
+aften hører jeg
+hende synge fra
+nattens første fæstning
+
+
+
+
+Januar 2005
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-64">
+            <h2>Som om</h2>
+            <div class="poem-body">
+Som om livet ikke
+var nok
+Som om det ikke
+var nok at være
+Som om vi var af
+forskellig kvalitet
+Som om vi havde
+større ret end andre
+Som om det ikke
+kostede noget
+Som om vi var
+herrer over
+evigheden
+
+
+
+Februar 2005</div>
+        </article>
+
+        <article class="poem" id="poem-65">
+            <h2>Spor </h2>
+            <div class="poem-body">
+Vi går fremad i 
+det spor vi øjner 
+foran os mens vi 
+fortolker landskabet 
+De der går forrest 
+råber bagud til 
+hovedfeltet der har 
+svært ved at se og 
+bagest kommer de mange 
+der er henvist til at vende sig 
+og se det andre 
+for længst har forladt 
+
+
+
+
+Januar 2005
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-66">
+            <h2>Tanker  </h2>
+            <div class="poem-body">
+Stilheden fanger de 
+gemte tanker 
+Griber dem ud af den 
+tomme luft og 
+lader dem vokse mens de 
+svæver rundt i det 
+frie rum og lader sig 
+se fra alle sider 
+Ved den mindste lyd 
+er de væk igen som 
+punkterede sæbebobler 
+
+
+
+
+Februar 2005
+          </div>
+        </article>
+
+        <article class="poem" id="poem-67">
+            <h2>Tidens vold</h2>
+            <div class="poem-body">
+Foran spejlet
+får man efterhånden
+brug for sin
+fantasi
+
+Der var engang men
+da forstod man det ikke
+
+
+
+Januar 2005
+          </div>
+        </article>
+
+        <article class="poem" id="poem-68">
+            <h2>Tolerance</h2>
+            <div class="poem-body">
+Så længe det ikke
+kommer indenfor
+mine døre
+Så længe mine
+hænder kan blive
+i lommen
+Så længe det er
+ren teori
+Så længe  er det
+OK med mig
+
+
+
+
+Februar 2005
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-69">
+            <h2>Tro</h2>
+            <div class="poem-body">
+En  personlige
+tro  på en højere
+mening med tilværelsen
+kan være en velsignelse
+for dig selv og dit liv men
+i det øjeblik du
+vil gøre den til
+mål og rettesnor for
+andre bliver den til
+en forbandelse
+
+
+
+Januar 2005
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-70">
+            <h2>Trækfugl</h2>
+            <div class="poem-body">
+I en skrå vinkel fanger
+du mit blik og
+lænker det i dit
+Du er en trækfugl og
+ved hvad det
+gælder
+Om lidt breder du 
+vingerne ud og
+lader  muligheden 
+stå tom
+
+
+
+
+Januar 2005
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-71">
+            <h2>Ubundet</h2>
+            <div class="poem-body">
+Der er ingen
+regler mellem dig og
+mig men det er dig der
+bestemmer hvornår vi
+skal ses
+
+
+
+
+Januar 2004
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-72">
+            <h2>Udsættelse</h2>
+            <div class="poem-body">
+Sneen dækker alt
+Et himmelsendt nådelag
+der smelter om lidt
+
+
+
+
+Januar 2005
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-73">
+            <h2>Udtryk</h2>
+            <div class="poem-body">
+Dette var en ren
+side før jeg
+sværtede den til med
+ord
+
+Hvorfor kan jeg
+ikke være stille og
+nyde det der er ?
+
+SSSSh
+
+
+
+
+Januar 2005
+          </div>
+        </article>
+
+        <article class="poem" id="poem-74">
+            <h2>Udvikling</h2>
+            <div class="poem-body">
+Der findes intet
+nyt under
+solen
+men man kan
+da altid flytte
+lidt på et
+komma
+
+
+
+December 2004
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-75">
+            <h2>Vækst</h2>
+            <div class="poem-body">
+Fortiden og fremtiden
+fletter fingre gennem
+nuet
+Veje fører til og
+fra gennem land der
+lader væksten følge
+sin rytme
+
+
+
+
+Januar 2005
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-76">
+            <h2>Venteværelset</h2>
+            <div class="poem-body">
+Hun har lagt sin
+tro foran døren og
+sat sit liv på standby
+Hun har iført sig
+håbet og forbeholdt sin
+kærlighed til hendes tid
+kommer ud 
+Først da  får hun øje på
+skiltet  over døren og
+læser teksten: 
+Ud
+
+
+
+Januar 2004
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-77">
+            <h2>Vilkår</h2>
+            <div class="poem-body">
+Som et undersøisk skær
+afgræsset af niblende
+munde
+afsøgt af glasklare øjne
+beboet 
+besat af kæmpende
+individer
+Som en upåviselig trussel
+bag den blå dags
+kald en
+højderyg under havet
+udstrakt i sin egen
+nødvendighed
+Fiskende fugle langs
+bevoksede fjelde
+flygtende skygger
+i åbne kløfter
+fangarme mellem 
+opspærrede gab
+Som et vilkår under
+balancen
+En forudsat mulighed for
+forlis
+
+
+
+Februar 2005</div>
+        </article>
+
+        <article class="poem" id="poem-78">
+            <h2>Våbenhvile</h2>
+            <div class="poem-body">
+Daggryet åbner sig  og 
+lader lyset  finde vej 
+Mørket kender rutinen og
+overgangen er aftale mere
+end kamp
+I  skyggerkapsler
+ligger natten på vagt og
+vogter  nidkært balancen
+
+
+
+Februar 2005</div>
+        </article>
+
+        <article class="poem" id="poem-79">
+            <h2>Ørkenvandring</h2>
+            <div class="poem-body">
+Der er ørkener
+imellem og hvem tror
+stadig på oaser
+Veje begynder et
+sted men hvem
+ved  hvor de ender
+så de fortsætter 
+hånd i hånd  uden at
+skæve til siden
+
+
+
+
+Januar 2005
+                  </div>
+        </article>
+        <hr>
+
+        <section class="author-info">
+            <h2>Om forfatteren</h2>
+            <img class="author-photo" src="../Images/Pasfoto_1964.jpg" alt="Frede Østergaard i 1964">
+            <p>Frede Østergaard (f. 1945) er lærer og teologisk uddannet.</p>
+            <p>Han begyndte at skrive digte tidligt i livet, og forfatterskabet har udviklet sig over mere end seks årtier.</p>
+            <p>De første tekster blev skrevet og delt i mindre, uformelle sammenhænge, før de senere blev samlet og udgivet gennem Den Gamle Poet.</p>
+        </section>
+        <hr>
+
+        <section class="other-collections">
+            <h2>Andre samlinger</h2>
+            <ul style="list-style: none; padding: 0;">
+                <li>Brønden (1965)</li>
+                <li>Natur (1968–1970)</li>
+                <li>Halvfjerdserbrun (1972)</li>
+                <li>Stengrunds tørst (1980–1983)</li>
+                <li>Lys i mørket (1986)</li>
+                <li>Hjertets rytme (2001)</li>
+                <li>Klodeskyer (2002)</li>
+                <li>Stilhedens styrke (2002)</li>
+                <li>Yrk (2002–2003)</li>
+                <li>Konserves (2003)</li>
+                <li>Vækst (2003)</li>
+                <li>Firs tekster (2003–2004)</li>
+                <li>Kun et øjeblik (2004)</li>
+                <li>Dagen (2004)</li>
+                <li>Det ender med et smil (2004)</li>
+                <li>Vejen (2004)</li>
+                <li>Til Dig (2004)</li>
+                <li>Undervejs (2004)</li>
+                <li>Filibuster (2004–2005)</li>
+                <li>Perler på snor (2004–2010)</li>
+                <li>Billedbogen (2005)</li>
+                <li>Hjertets slag (2005)</li>
+                <li>Grib (2005)</li>
+                <li>Overvejelser (2005)</li>
+                <li>Skygger (2005–2006)</li>
+                <li>Tegn (2005–2006)</li>
+                <li>Jordens liv (2006)</li>
+                <li>Opdagelsesrejse (2006)</li>
+                <li>Månelys (2006–2009)</li>
+                <li>Aftryk (2010–2011)</li>
+                <li>Landskab (2004–2023)</li>
+            </ul>
+        </section>
+
+    </div> </body>
+</html>

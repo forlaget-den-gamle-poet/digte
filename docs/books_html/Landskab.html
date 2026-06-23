@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landskab - Frede Østergaard</title>
+    <style>
+        :root {
+            --bg-color: #fdfdfc;
+            --text-color: #222;
+            --link-color: #555;
+        }
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+        img.cover {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 4rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .title-page, .colophon, .author-info, .other-collections {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        .title-page h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .title-page .subtitle {
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        .colophon {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        nav.toc {
+            margin-bottom: 4rem;
+            background: #f4f4f4;
+            padding: 1.5rem;
+            border-radius: 4px;
+        }
+        nav.toc h2 {
+            margin-top: 0;
+        }
+        nav.toc ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav.toc li {
+            margin-bottom: 0.5rem;
+        }
+        nav.toc a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+        nav.toc a:hover {
+            text-decoration: underline;
+        }
+        .poem {
+            margin-bottom: 5rem;
+            page-break-inside: avoid;
+        }
+        .poem h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 0.5rem;
+        }
+        .poem-body {
+            white-space: pre-wrap; /* Crucial: preserves your line breaks */
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        .author-photo {
+            width: 150px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ddd;
+            margin: 3rem 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="cover" src="../covers/web_Landskab.png" alt="Omslag for Landskab">
+        <div class="title-page">
+            <h1>Landskab</h1>
+            <div class="subtitle">Digte</div>
+            <div class="author">Frede Østergaard</div>
+        </div>
+        <hr>
+
+        <div class="colophon">
+            <h2>Kolofon</h2>
+            <p><strong>Landskab</strong><br>
+            &copy; Frede Østergaard<br>
+            Digtene er skrevet: 2004–2023<br>
+            Digital Web-udgave udgivet i 2026<br>
+            Forlaget Den Gamle Poet<br>
+            <br>
+            Digitale udgaver og kildefiler:<br>
+            <a href="https://github.com/forlaget-den-gamle-poet/digte">github.com/forlaget-den-gamle-poet/digte</a><br>
+            <br>
+            Alle rettigheder forbeholdes</p>
+        </div>
+        <hr>
+        <nav class="toc">
+            <h2>Indholdsfortegnelse</h2>
+            <ul>
+                <li><a href="#poem-0">De</a></li>
+                <li><a href="#poem-1">Dit øje i mit</a></li>
+                <li><a href="#poem-2">Fuglen </a></li>
+                <li><a href="#poem-3">Henstand</a></li>
+                <li><a href="#poem-4">Hvad er meningen</a></li>
+                <li><a href="#poem-5">Landskab</a></li>
+                <li><a href="#poem-6">Lortevejr</a></li>
+                <li><a href="#poem-7">Lærkesang</a></li>
+                <li><a href="#poem-8">Magt</a></li>
+                <li><a href="#poem-9">Mine ord falder ud af</a></li>
+                <li><a href="#poem-10">Månen sår sin sæd i</a></li>
+                <li><a href="#poem-11">Nytårsfortsæt</a></li>
+                <li><a href="#poem-12">Nåle</a></li>
+                <li><a href="#poem-13">Overvejelse</a></li>
+                <li><a href="#poem-14">Sommernat</a></li>
+                <li><a href="#poem-15">Søen</a></li>
+                <li><a href="#poem-16">Truffet</a></li>
+                <li><a href="#poem-17">Udvalgt</a></li>
+                <li><a href="#poem-18">Vilkår</a></li>
+                <li><a href="#poem-19">Ørnen</a></li>
+                <li><a href="#poem-20">Masken</a></li>
+                <li><a href="#poem-21">Lim</a></li>
+            </ul>
+        </nav>
+        <hr>
+
+        <article class="poem" id="poem-0">
+            <h2>De</h2>
+            <div class="poem-body">
+De dør omkring mig
+Falder om og bliver til
+Noget
+Ligger hvide i senge og
+svinder ind 
+Er ikke mere
+Deres navne står 
+på sten på kirkegårde
+Eller blot en dag i 
+Avisen for at forsvinde
+mellem ukendte
+De går bort
+De får fred
+De tager hjem
+De er ikke mere
+mens jeg stadig
+går her 
+ligesom
+uberettiget for
+Hvor går jeg hen og
+burde jeg ikke være
+sammen med det store
+flertal i 
+tavs solidaritet
+Det er noget at tænke over
+En livsopgave der
+kræver alle mine
+skridt
+
+
+22.10.2013
+
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-1">
+            <h2>Dit øje i mit</h2>
+            <div class="poem-body">boret gennem til 
+skyld og skam
+Vi forstår ikke
+hvem vi er,
+ansigt dømt til
+ansigt
+Fremstrakte hænder kan
+ikke nå
+så længe sandheden 
+nægter at
+vælge side
+
+Juni 2014
+
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-2">
+            <h2>Fuglen </h2>
+            <div class="poem-body">skærer dagen for 
+med lange blanke 
+lyde
+Lyset fanger 
+duggens øjne og 
+løfter gryet 
+ind i 
+dagen, 
+nyskabt som en
+tilgivelse
+skænket af 
+glæde
+Frigivne 
+fortsætter vi
+vejen vi baner
+side om side
+lettede for
+mørkets byrde
+
+
+06.11.1013</div>
+        </article>
+
+        <article class="poem" id="poem-3">
+            <h2>Henstand</h2>
+            <div class="poem-body">
+Livets mening har 
+slået sig ned i
+et glas der
+bliver til en kalk, hun
+hæver med skælvende
+hænder og drikker,
+til hver celle har
+fået besked:
+Det går an at 
+være her og 
+i morgen ligger bag 
+bjerge der ikke skal 
+bestiges nu
+
+
+
+September 2007</div>
+        </article>
+
+        <article class="poem" id="poem-4">
+            <h2>Hvad er meningen</h2>
+            <div class="poem-body">
+Fuglene
+Kommer ud af vinteren
+I farver
+Kommer ud af
+Kulden
+Der viger for
+Driften mod
+Liv
+Hvad er meningen
+Hvis ikke længslen
+Efter at nå frem
+Med olympens fakkel
+Løftet gennem
+Tomhedens hvide
+smerte
+At bære lyset frem
+gennem mørke
+Fuglene leder
+under hækken
+
+24.01.2014</div>
+        </article>
+
+        <article class="poem" id="poem-5">
+            <h2>Landskab</h2>
+            <div class="poem-body">
+Vilde marker
+vokset til med
+løse rygter
+Overhængende
+truslers påstande på den
+rådvilde jord
+Hvad gør jeg her mellem
+vildfarne vækster
+Sandheden trækker et
+spor over
+bakken der skjuler
+bagved
+
+Hvis sandhed?
+
+Min  måske et
+sted ingen  
+har trådt
+
+
+
+31. maj 2012</div>
+        </article>
+
+        <article class="poem" id="poem-6">
+            <h2>Lortevejr</h2>
+            <div class="poem-body">
+Det regner.
+Dagen hænger i en
+letsindig tråd over
+risten der åbner
+en udvej
+Mørket har de
+bedste kort på
+hånden og tager et
+stik hjem før
+nogen kan
+spille ud
+Lortevejr hvisler en
+læbemund mens
+tårekanalen gurgler
+taknemmeligt og
+lader sig 
+løbe over 
+
+
+
+April 2015</div>
+        </article>
+
+        <article class="poem" id="poem-7">
+            <h2>Lærkesang</h2>
+            <div class="poem-body">
+Min krop er 
+gammel,min sjæl så 
+ung som
+lærkens sang der 
+spænder evighed fra
+jord til himmel
+
+Valmuen er som et
+glødende hjerte i
+græsset der bare
+er
+
+
+Juli 2015</div>
+        </article>
+
+        <article class="poem" id="poem-8">
+            <h2>Magt</h2>
+            <div class="poem-body">
+Smeltede hjerte
+løb ikke væk mellem
+mine fingre
+Hvad ved du om diger
+eller havets knusende
+kraft
+
+
+20.nov.2011</div>
+        </article>
+
+        <article class="poem" id="poem-9">
+            <h2>Mine ord falder ud af</h2>
+            <div class="poem-body">munden og forsvinder i
+græsset
+Træernes skygger lokker
+brændte børn der
+samler smuler hvor de
+er og giver nyt liv til
+ekkoet der allerede
+har glemt sin skaber og 
+villigt lader sig
+bøje i former
+ingen har forudset
+De knækkede strå
+retter sig igen
+når duggen falder
+
+25.06.2014</div>
+        </article>
+
+        <article class="poem" id="poem-10">
+            <h2>Månen sår sin sæd i</h2>
+            <div class="poem-body">modne agre
+bundet tæt til 
+duggens hinde 
+Hvad ved vi
+om egen vilje 
+svøbte i
+klodebegær
+Som en evig bølge
+vokser liv sin
+vej,
+et lyn, en blodig 
+flænge i den 
+åbne himmel 
+
+
+Juni 2004</div>
+        </article>
+
+        <article class="poem" id="poem-11">
+            <h2>Nytårsfortsæt</h2>
+            <div class="poem-body">
+Han vender
+bladet og 
+skriver sig på det 
+nye års begyndelse,
+skriften den 
+samme som
+sidste år,
+bogstaver der
+hægter sig sammen og
+rækker ud som en 
+bro der forsøger at 
+nå land
+
+
+
+December 2008</div>
+        </article>
+
+        <article class="poem" id="poem-12">
+            <h2>Nåle</h2>
+            <div class="poem-body">
+Sorgen er skrevet på
+krøllede sedler der
+hænger tæt på 
+tavlen
+Vinduet lukker en
+brise ind og lader en  
+lap slippe sin
+nål og falde i 
+cirkler mod
+gulvet der intet 
+læser men lader 
+ordene hvile mod
+mørket
+
+
+29. maj 2011</div>
+        </article>
+
+        <article class="poem" id="poem-13">
+            <h2>Overvejelse</h2>
+            <div class="poem-body">
+Hård vinter og 
+lånte fjer er en
+risikabel blanding
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-14">
+            <h2>Sommernat</h2>
+            <div class="poem-body">
+Vinduet svinger på
+sine hængsler
+Jeg bøjer mig over 
+min tanke og
+former den
+efter min
+skabelon
+
+Natsværmeren
+svirrer sine
+vinger
+
+
+22. juni 2011
+
+
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-15">
+            <h2>Søen</h2>
+            <div class="poem-body">
+Krappe bølger
+Fugle har vinger
+Flyve, flyve fri af
+jeg
+
+En snegl over stien
+
+
+Oktober 2012</div>
+        </article>
+
+        <article class="poem" id="poem-16">
+            <h2>Truffet</h2>
+            <div class="poem-body">
+Fuglens sang 
+falder fra
+træet og hun kan
+ikke forklare sin 
+indsigt der
+fylder hendes længsel med
+tro
+Hendes skridt bliver
+faste og hun går som
+én der 
+glæder sig
+til noget 
+forude
+
+marts 2016</div>
+        </article>
+
+        <article class="poem" id="poem-17">
+            <h2>Udvalgt</h2>
+            <div class="poem-body">
+Vi står fast i 
+hver sin
+tro og
+har slået rod på
+nåden
+Vi tåler hinanden fordi 
+vi vil og 
+har let ved at
+tilgive den anden 
+højt på
+forklarelsens bjerg 
+hvor vi ser alting i 
+lyset der 
+stråler ud fra 
+den 
+der har fundet 
+sandheden i
+sig selv og 
+løgnen i
+den anden
+
+
+November 2012
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-18">
+            <h2>Vilkår</h2>
+            <div class="poem-body">
+Sandheden bøjes ikke som
+ord
+
+8.maj 2011</div>
+        </article>
+
+        <article class="poem" id="poem-19">
+            <h2>Ørnen</h2>
+            <div class="poem-body">
+Kun ørnen ved hvad
+ørnen tænker,
+lænket til mit
+øje
+Tænker,
+Tænker ikke
+Grænseløse længsel
+fængsler mit blik
+Hvor meget kan én 
+enkelt bære
+Lad dén svare der
+bærer mere end sit
+Flyvende skygger over
+jorden tegner
+fuglens flugt
+
+
+5. juni 2011
+
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-20">
+            <h2>Masken</h2>
+            <div class="poem-body">
+Med en slanges hug
+fæstned hun en
+maske på hans ansigt –
+men først
+slog hun spejlet i
+stykker -
+Han mærkede ingenting
+før han slog sig på
+et ansigt knyttet i
+foragt og fandt sine
+veje blokerede af
+had
+Med tiden frøs han
+inde og blev væk i
+sig selv og
+vidste ikke længere
+hvem han var</div>
+        </article>
+
+        <article class="poem" id="poem-21">
+            <h2>Lim</h2>
+            <div class="poem-body">
+Jeg tænker i lag
+Husker i niveauer
+Overfaldes af glimt der
+Ikke vil mig godt men
+bryder gennem
+nuets ramme og splinter
+min balance
+Billeder
+falder på gulvet og
+bliver til skår jeg
+stædigt forsøger at
+stykke sammen til
+det der kunne have
+været men
+ikke vil selvom jeg
+forsøger at lime med
+de sidste dråber af
+længsel</div>
+        </article>
+        <hr>
+
+        <section class="author-info">
+            <h2>Om forfatteren</h2>
+            <img class="author-photo" src="../Images/Pasfoto_1964.jpg" alt="Frede Østergaard i 1964">
+            <p>Frede Østergaard (f. 1945) er lærer og teologisk uddannet.</p>
+            <p>Han begyndte at skrive digte tidligt i livet, og forfatterskabet har udviklet sig over mere end seks årtier.</p>
+            <p>De første tekster blev skrevet og delt i mindre, uformelle sammenhænge, før de senere blev samlet og udgivet gennem Den Gamle Poet.</p>
+        </section>
+        <hr>
+
+        <section class="other-collections">
+            <h2>Andre samlinger</h2>
+            <ul style="list-style: none; padding: 0;">
+                <li>Brønden (1965)</li>
+                <li>Natur (1968–1970)</li>
+                <li>Halvfjerdserbrun (1972)</li>
+                <li>Stengrunds tørst (1980–1983)</li>
+                <li>Lys i mørket (1986)</li>
+                <li>Hjertets rytme (2001)</li>
+                <li>Klodeskyer (2002)</li>
+                <li>Stilhedens styrke (2002)</li>
+                <li>Yrk (2002–2003)</li>
+                <li>Konserves (2003)</li>
+                <li>Vækst (2003)</li>
+                <li>Firs tekster (2003–2004)</li>
+                <li>Kun et øjeblik (2004)</li>
+                <li>Dagen (2004)</li>
+                <li>Det ender med et smil (2004)</li>
+                <li>Vejen (2004)</li>
+                <li>Til Dig (2004)</li>
+                <li>Undervejs (2004)</li>
+                <li>Filibuster (2004–2005)</li>
+                <li>Perler på snor (2004–2010)</li>
+                <li>Billedbogen (2005)</li>
+                <li>Hjertets slag (2005)</li>
+                <li>Grib (2005)</li>
+                <li>Overvejelser (2005)</li>
+                <li>Skygger (2005–2006)</li>
+                <li>Tegn (2005–2006)</li>
+                <li>Jordens liv (2006)</li>
+                <li>Opdagelsesrejse (2006)</li>
+                <li>Månelys (2006–2009)</li>
+                <li>Aftryk (2010–2011)</li>
+                <li>Landskab (2004–2023)</li>
+            </ul>
+        </section>
+
+    </div> </body>
+</html>

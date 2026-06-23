@@ -1,0 +1,2399 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yrk - Frede Østergaard</title>
+    <style>
+        :root {
+            --bg-color: #fdfdfc;
+            --text-color: #222;
+            --link-color: #555;
+        }
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+        img.cover {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 4rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .title-page, .colophon, .author-info, .other-collections {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        .title-page h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .title-page .subtitle {
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        .colophon {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        nav.toc {
+            margin-bottom: 4rem;
+            background: #f4f4f4;
+            padding: 1.5rem;
+            border-radius: 4px;
+        }
+        nav.toc h2 {
+            margin-top: 0;
+        }
+        nav.toc ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav.toc li {
+            margin-bottom: 0.5rem;
+        }
+        nav.toc a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+        nav.toc a:hover {
+            text-decoration: underline;
+        }
+        .poem {
+            margin-bottom: 5rem;
+            page-break-inside: avoid;
+        }
+        .poem h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 0.5rem;
+        }
+        .poem-body {
+            white-space: pre-wrap; /* Crucial: preserves your line breaks */
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        .author-photo {
+            width: 150px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ddd;
+            margin: 3rem 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="cover" src="../covers/web_Yrk.png" alt="Omslag for Yrk">
+        <div class="title-page">
+            <h1>Yrk</h1>
+            <div class="subtitle">Digte</div>
+            <div class="author">Frede Østergaard</div>
+        </div>
+        <hr>
+
+        <div class="colophon">
+            <h2>Kolofon</h2>
+            <p><strong>Yrk</strong><br>
+            &copy; Frede Østergaard<br>
+            Digtene er skrevet: 2002–2003<br>
+            Digital Web-udgave udgivet i 2026<br>
+            Forlaget Den Gamle Poet<br>
+            <br>
+            Digitale udgaver og kildefiler:<br>
+            <a href="https://github.com/forlaget-den-gamle-poet/digte">github.com/forlaget-den-gamle-poet/digte</a><br>
+            <br>
+            Alle rettigheder forbeholdes</p>
+        </div>
+        <hr>
+        <nav class="toc">
+            <h2>Indholdsfortegnelse</h2>
+            <ul>
+                <li><a href="#poem-0">Åndelig udvikling</a></li>
+                <li><a href="#poem-1">Aflysning</a></li>
+                <li><a href="#poem-2">At drages med døden</a></li>
+                <li><a href="#poem-3">At gøre myg til elefanter </a></li>
+                <li><a href="#poem-4">Babymagt</a></li>
+                <li><a href="#poem-5">Besynderligt</a></li>
+                <li><a href="#poem-6">Blufærdig</a></li>
+                <li><a href="#poem-7">Brolæggeren</a></li>
+                <li><a href="#poem-8">Budgetforlig</a></li>
+                <li><a href="#poem-9">De siger</a></li>
+                <li><a href="#poem-10">Den omvendte</a></li>
+                <li><a href="#poem-11">Den søgende</a></li>
+                <li><a href="#poem-12">Den svævende mand</a></li>
+                <li><a href="#poem-13">Divaen</a></li>
+                <li><a href="#poem-14">Drømmefangeren</a></li>
+                <li><a href="#poem-15">Drivhus</a></li>
+                <li><a href="#poem-16">Efter festen</a></li>
+                <li><a href="#poem-17">Eftermæle</a></li>
+                <li><a href="#poem-18">Efterspil</a></li>
+                <li><a href="#poem-19">En udstrakt hånd</a></li>
+                <li><a href="#poem-20">Endelig</a></li>
+                <li><a href="#poem-21">Erindring</a></li>
+                <li><a href="#poem-22">Et eventyr om udeengle og</a></li>
+                <li><a href="#poem-23">Et spørgsmål om pris</a></li>
+                <li><a href="#poem-24">Fokus</a></li>
+                <li><a href="#poem-25">For højt oppe</a></li>
+                <li><a href="#poem-26">For sent</a></li>
+                <li><a href="#poem-27">Forførelse</a></li>
+                <li><a href="#poem-28">Forræder</a></li>
+                <li><a href="#poem-29">Fri</a></li>
+                <li><a href="#poem-30">Frisuren</a></li>
+                <li><a href="#poem-31">Fyldt</a></li>
+                <li><a href="#poem-32">Fædrenes synder</a></li>
+                <li><a href="#poem-33">Fællesskabet</a></li>
+                <li><a href="#poem-34">Genbesætning</a></li>
+                <li><a href="#poem-35">Håb forude</a></li>
+                <li><a href="#poem-36">Hør her - Makker</a></li>
+                <li><a href="#poem-37">Himmelfart</a></li>
+                <li><a href="#poem-38">Hjemsøgt</a></li>
+                <li><a href="#poem-39">Hundred og en</a></li>
+                <li><a href="#poem-40">Husråd</a></li>
+                <li><a href="#poem-41">Hvaler</a></li>
+                <li><a href="#poem-42">Hvor?</a></li>
+                <li><a href="#poem-43">Hysterisk</a></li>
+                <li><a href="#poem-44">I al anstændighed</a></li>
+                <li><a href="#poem-45">I al beskedenhed</a></li>
+                <li><a href="#poem-46">Integration</a></li>
+                <li><a href="#poem-47">Ja hvem ved</a></li>
+                <li><a href="#poem-48">Ja ja da</a></li>
+                <li><a href="#poem-49">Kaffemik</a></li>
+                <li><a href="#poem-50">Karakterbrist</a></li>
+                <li><a href="#poem-51">Kludetæppet</a></li>
+                <li><a href="#poem-52">Kommentar</a></li>
+                <li><a href="#poem-53">Kontrollant</a></li>
+                <li><a href="#poem-54">Kursændring?</a></li>
+                <li><a href="#poem-55">Livsløbet</a></li>
+                <li><a href="#poem-56">Lydløs</a></li>
+                <li><a href="#poem-57">Lykken den er…</a></li>
+                <li><a href="#poem-58">Lys</a></li>
+                <li><a href="#poem-59">Måske</a></li>
+                <li><a href="#poem-60">Medmennesker</a></li>
+                <li><a href="#poem-61">Ministerfruen</a></li>
+                <li><a href="#poem-62">Misundelse</a></li>
+                <li><a href="#poem-63">Moders hånd</a></li>
+                <li><a href="#poem-64">Modvind</a></li>
+                <li><a href="#poem-65">Mor</a></li>
+                <li><a href="#poem-66">Museum</a></li>
+                <li><a href="#poem-67">Myrer</a></li>
+                <li><a href="#poem-68">Næsten</a></li>
+                <li><a href="#poem-69">Nå sådan</a></li>
+                <li><a href="#poem-70">Nåde</a></li>
+                <li><a href="#poem-71">Notat </a></li>
+                <li><a href="#poem-72">Om kærlighed og bytteleg</a></li>
+                <li><a href="#poem-73">Omsider</a></li>
+                <li><a href="#poem-74">Op og ned</a></li>
+                <li><a href="#poem-75">Opskrifter</a></li>
+                <li><a href="#poem-76">Oserinden</a></li>
+                <li><a href="#poem-77">Overfaldet</a></li>
+                <li><a href="#poem-78">Overflod</a></li>
+                <li><a href="#poem-79">Personlighed ?</a></li>
+                <li><a href="#poem-80">Prædikanten</a></li>
+                <li><a href="#poem-81">Prinsen</a></li>
+                <li><a href="#poem-82">Rådgiveren</a></li>
+                <li><a href="#poem-83">Rationalisering</a></li>
+                <li><a href="#poem-84">Realisten</a></li>
+                <li><a href="#poem-85">Redskab</a></li>
+                <li><a href="#poem-86">Reformatoren</a></li>
+                <li><a href="#poem-87">Rekord</a></li>
+                <li><a href="#poem-88">Reportage - med indlagt stilbrud</a></li>
+                <li><a href="#poem-89">Risikovurdering</a></li>
+                <li><a href="#poem-90">Risikovurdering</a></li>
+                <li><a href="#poem-91">Rygrad</a></li>
+                <li><a href="#poem-92">Så længe…</a></li>
+                <li><a href="#poem-93">Sølvbrylluppet</a></li>
+                <li><a href="#poem-94">Saltvand</a></li>
+                <li><a href="#poem-95">Samarbejde</a></li>
+                <li><a href="#poem-96">Samarbejde</a></li>
+                <li><a href="#poem-97">Sammenhold</a></li>
+                <li><a href="#poem-98">Sammensat</a></li>
+                <li><a href="#poem-99">Samspil</a></li>
+                <li><a href="#poem-100">Sardin</a></li>
+                <li><a href="#poem-101">Selvhjulpne</a></li>
+                <li><a href="#poem-102">Slikmund</a></li>
+                <li><a href="#poem-103">Snøren</a></li>
+                <li><a href="#poem-104">Snusfornuft</a></li>
+                <li><a href="#poem-105">Spekulation</a></li>
+                <li><a href="#poem-106">Stregen</a></li>
+                <li><a href="#poem-107">Svigerinden 1</a></li>
+                <li><a href="#poem-108">Svigerinden 2</a></li>
+                <li><a href="#poem-109">Så menneskeligt</a></li>
+                <li><a href="#poem-110">Tømmermænd</a></li>
+                <li><a href="#poem-111">Tarzan</a></li>
+                <li><a href="#poem-112">Thi kendes for ret</a></li>
+                <li><a href="#poem-113">Tilgivelse</a></li>
+                <li><a href="#poem-114">Tja…</a></li>
+                <li><a href="#poem-115">Transport</a></li>
+                <li><a href="#poem-116">Trin</a></li>
+                <li><a href="#poem-117">Tung</a></li>
+                <li><a href="#poem-118">Ulykke</a></li>
+                <li><a href="#poem-119">Ved begravelsen</a></li>
+                <li><a href="#poem-120">Verdensbilledet</a></li>
+                <li><a href="#poem-121">Vurdering </a></li>
+                <li><a href="#poem-122">tête-à-tête</a></li>
+            </ul>
+        </nav>
+        <hr>
+
+        <article class="poem" id="poem-0">
+            <h2>Åndelig udvikling</h2>
+            <div class="poem-body">
+Enhver plante vil
+forsøge at indtage den
+plads den har behov
+for
+Vi mennesker er
+højere udviklet så
+derfor ser man  ikke på
+vort niveau individer 
+der presses af 
+artsfæller
+          </div>
+        </article>
+
+        <article class="poem" id="poem-1">
+            <h2>Aflysning</h2>
+            <div class="poem-body">
+Intet fungerer i dag
+beklager
+Knæene aflyser
+samarbejdet med
+kroppen der kun
+vil ligge på grund af
+uoverkommelighed
+Maven protesterer
+tungt over vanskelige
+forhold mens hjernen
+er ramt af morgenchok 
+Der er i det hele 
+taget ikke noget at 
+komme efter
+Dagen får intet at
+gøre her  
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-2">
+            <h2>At drages med døden</h2>
+            <div class="poem-body">
+Hun havde lagt sig
+med pilleglasset
+
+Nu skulle døden have
+det sidste ord
+
+Indkroget i sit eget
+mørke mærkede hun
+forvirret at hun -
+skulle - og 
+efter bitter kamp med
+kroppen måtte hun
+stå op og 
+overgive sig til
+dens krav
+
+Og da hun så
+var oppe kunne hun jo
+ligeså godt tage
+livet med
+
+
+10. februar 2004
+
+
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-3">
+            <h2>At gøre myg til elefanter </h2>
+            <div class="poem-body">
+
+Nu skal man jo 
+ikke gøre myg til 
+elefanter 
+men hvis det nu 
+skete alligevel 
+at myg blot blev på 
+størrelse med 
+elefanter men ellers 
+blev ved med at være dem 
+de var så kunne det jo 
+godt være der var et 
+synspunkt eller to der 
+skulle revideres og en 
+lov eller måske flere der 
+skulle justeres for at 
+klare problemerne med 
+de store dyr der vel fik 
+behov for en stærkt forøget 
+mængde blod ligesom man 
+må antage at myggestik 
+ville udgøre en ny trussel for 
+de stakler der skulle lægge 
+krop til 
+Myggesværme i 
+sommernatten ville 
+blive et nyt eksotisk 
+indslag i naturen der nok 
+ville kunne få en til at spærre 
+øjnene op for ikke at 
+tale om ørerne der skulle 
+klare en støj der utvivlsomt 
+ville være overdøvende 
+Vi ville for første gang 
+opleve at kunne se en 
+myg i øjnene og få et 
+helt nyt indblik i de uhyre 
+skabningers sjæleliv 
+At klaske en myg og tvære den 
+flad ville nok være en 
+uddøende sport der kun 
+kunne udøves af 
+specialister 
+Det er i grunden ikke meget der 
+skal til for at ændre ens liv 
+ret voldsomt 
+For eksempel bare det at 
+gøre myg til 
+elefanter 
+
+
+          </div>
+        </article>
+
+        <article class="poem" id="poem-4">
+            <h2>Babymagt</h2>
+            <div class="poem-body">
+Det er i de få
+øjeblikke vi har 
+held til at 
+distancere den indre 
+baby vi formår at 
+spille voksne –
+men i det lange løb er det
+babyen der vinder og
+når alt kommer til alt er
+det vel derfor der
+stadig findes rester af
+livsrum i verden
+
+
+          </div>
+        </article>
+
+        <article class="poem" id="poem-5">
+            <h2>Besynderligt</h2>
+            <div class="poem-body">
+Ja hun har da
+godt nok en stor
+næsen -
+men at den i 
+den grad skulle tage 
+udsynet fra hende 
+er ikke til at
+forstå
+
+
+          </div>
+        </article>
+
+        <article class="poem" id="poem-6">
+            <h2>Blufærdig</h2>
+            <div class="poem-body">
+Sandheden er for
+blufærdig til at
+optræde nøgen
+hvorfor man oftest
+ser den iklædt et
+passende kostume
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-7">
+            <h2>Brolæggeren</h2>
+            <div class="poem-body">
+Hun talte så
+højt og så
+længe at begge
+mine ører
+faldt af
+Først bagefter
+så jeg den 
+brolagte vej der
+voksede i hendes
+spor
+          </div>
+        </article>
+
+        <article class="poem" id="poem-8">
+            <h2>Budgetforlig</h2>
+            <div class="poem-body">
+Når den sidste
+frikadelle er
+ædt er det
+for sent at
+lange til
+fadet
+
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-9">
+            <h2>De siger</h2>
+            <div class="poem-body">
+
+Vil du angribe direkte
+undgår du ikke
+at forholde dig til
+sandhedens spejl
+Et udspredt rygte
+ser ingen i
+øjnene og gør
+sit arbejde uden
+kamp
+          </div>
+        </article>
+
+        <article class="poem" id="poem-10">
+            <h2>Den omvendte</h2>
+            <div class="poem-body">
+Hvor er det
+ærgerligt jeg har 
+brugt så meget 
+tid på at iagttage og
+kritisere det, det er
+så sjovt at gøre
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-11">
+            <h2>Den søgende</h2>
+            <div class="poem-body">
+Han søgte
+originalitet
+men fandt den
+aldrig da
+han ikke kendte
+den præcise
+definition
+
+24. februar 2004
+          </div>
+        </article>
+
+        <article class="poem" id="poem-12">
+            <h2>Den svævende mand</h2>
+            <div class="poem-body">
+Ved at hæve sig op
+over alt der krævede
+holdning undgik han 
+svævende at vælge side og 
+vandt almindelig beundring
+som en meget klog mand
+
+
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-13">
+            <h2>Divaen</h2>
+            <div class="poem-body">
+Hun var altid
+på -
+selv bag den
+låste dør på
+toilettet
+
+10. februar 2004
+          </div>
+        </article>
+
+        <article class="poem" id="poem-14">
+            <h2>Drømmefangeren</h2>
+            <div class="poem-body">
+
+Hvor der er en vilje
+er der en vej
+og lige børn leger bedst
+Man ved da
+den korteste vej til målet
+er at håbe lidt
+og gøre meget
+Husk du er stærkest alene
+de små potter
+har også ører
+og som herre så svend
+Sæt tæring efter næring
+Tidligt op
+og tidligt i seng
+det er sundt for en lille dreng
+for slet ikke at sige
+en sød
+lille pige
+Som du sår
+skal du høste
+så den kommer også frem
+som ager med stude
+Sæt ølse for
+og ølse bag
+pølsen har dog
+samme smag</div>
+        </article>
+
+        <article class="poem" id="poem-15">
+            <h2>Drivhus</h2>
+            <div class="poem-body">
+En familie kan
+være det
+drivhus der
+gør det muligt at
+overleve en
+kold vinter
+
+-men uden en
+kyndig gartner
+er der nok flere
+chancer udenfor
+          </div>
+        </article>
+
+        <article class="poem" id="poem-16">
+            <h2>Efter festen</h2>
+            <div class="poem-body">
+Den har indtaget
+universet og
+korsfæstet kroppen
+til madrassen
+
+vender han
+hovedet
+farer den op
+og vil ud
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-17">
+            <h2>Eftermæle</h2>
+            <div class="poem-body">
+De kaldte ham
+et fæ så
+det var han
+jo nok
+Hans største
+talent var
+hans kærlighed
+til mennesker
+          </div>
+        </article>
+
+        <article class="poem" id="poem-18">
+            <h2>Efterspil</h2>
+            <div class="poem-body">
+Alligevel er der
+nok tilbage til en
+lille fest
+En portion glæde
+Lidt fremtidstro
+Det går sgu nok
+Der er en hel flaske
+kærlighed </div>
+        </article>
+
+        <article class="poem" id="poem-19">
+            <h2>En udstrakt hånd</h2>
+            <div class="poem-body">
+Så enkelt at
+markere sin
+uafhængighed
+Så naturligt at
+forsvare en
+truet frihed
+Så let at rejse
+palisader
+
+Så umuligt at
+række hånden frem
+til forsoning
+
+          </div>
+        </article>
+
+        <article class="poem" id="poem-20">
+            <h2>Endelig</h2>
+            <div class="poem-body">
+Jeg har sat filter  i
+min telefon
+der spærrer for 
+opkald fra dem der vil 
+skrive min dagsorden
+Min brevsprække er
+programmeret til at
+sønderrive 
+henvendelser fra
+folk der vil 
+forbruge mit liv
+Og allerede havelågen
+nægter adgang for enhver
+der forsøger at gå ind
+uden vilje til at dele
+min virkelighed et
+øjeblik
+Endelig er jeg
+gammel nok til
+at plukke livet 
+selv med egne
+hænder
+          </div>
+        </article>
+
+        <article class="poem" id="poem-21">
+            <h2>Erindring</h2>
+            <div class="poem-body">
+Efter hans pludselige
+død på stien langs
+søen huskede hun at
+han godt nok havde
+sagt engang at han
+ville gå med hende til
+verdens ende
+          </div>
+        </article>
+
+        <article class="poem" id="poem-22">
+            <h2>Et eventyr om udeengle og</h2>
+            <div class="poem-body">hjemmedjævle
+
+Efter års ensomhed mødte
+han sit alter ego i 
+en skøn kvindes 
+krop
+
+Når engle mødes, går det
+stærkt
+
+De flyttede sammen
+i den første nat og 
+levede i Helvede til 
+deres dages ende
+
+
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-23">
+            <h2>Et spørgsmål om pris</h2>
+            <div class="poem-body">
+Det var jo det med
+kærligheden
+Han troede det var når
+nogen viste ham
+opmærksomhed 
+Ja i grunden var han til
+salg for et første
+vurderende blik
+
+
+24. februar 2004
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-24">
+            <h2>Fokus</h2>
+            <div class="poem-body">
+Han fik øje på
+døden og 
+glemte livet der dog
+leveres pakket i
+evighedsgavepapir
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-25">
+            <h2>For højt oppe</h2>
+            <div class="poem-body">
+Halvvejs til
+månen vendte
+jeg om  og
+skiftede til en
+retvendt stråle der
+næsten for 
+nænsomt fik mig 
+hjem til den 
+bofaste dag der 
+uden at tøve
+åbnede favnen for
+flaksende øjne og
+glødende ører
+
+          </div>
+        </article>
+
+        <article class="poem" id="poem-26">
+            <h2>For sent</h2>
+            <div class="poem-body">
+Når den hårfine
+revne har åbnet
+munden til et
+brølende gab er
+det for sent at
+glatte ud
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-27">
+            <h2>Forførelse</h2>
+            <div class="poem-body">
+Ønskerne svirrer lavt over
+mulighederne og 
+lokker dem til 
+aktivitet
+          </div>
+        </article>
+
+        <article class="poem" id="poem-28">
+            <h2>Forræder</h2>
+            <div class="poem-body">
+Der er ikke
+ringeste tvivl i
+mit sind
+den satan skal
+få når jeg ser
+ham 
+Da jeg står foran
+ham er tungen
+lam og munden-
+min Judas -
+den smiler
+          </div>
+        </article>
+
+        <article class="poem" id="poem-29">
+            <h2>Fri</h2>
+            <div class="poem-body">
+
+Den frie fugl fløj
+højt over
+servitutter og panthæftelser
+med et skadefro skrig
+Grundigt havde den fralagt sig
+sine ansvar
+og sikret sin frihed
+med skyldæg i alles reder
+Beboerne ville
+med tiden udruge
+små byrder, hæftelser og
+forpligtelser
+der på ingen tid ville
+vokse til og for altid
+stække deres kraft</div>
+        </article>
+
+        <article class="poem" id="poem-30">
+            <h2>Frisuren</h2>
+            <div class="poem-body">
+
+Da hun omsider
+mødte forklaringen på
+mislydene i familien
+afslog hun
+resolut indsigten der
+spolerede hendes
+syn på nære
+personer
+
+Sammenbidt
+reparerede hun
+frisurens opsætning med
+hårde strøg
+
+          </div>
+        </article>
+
+        <article class="poem" id="poem-31">
+            <h2>Fyldt</h2>
+            <div class="poem-body">
+Han var så
+fuld af sig selv at
+der ikke var
+plads til andet
+
+          </div>
+        </article>
+
+        <article class="poem" id="poem-32">
+            <h2>Fædrenes synder</h2>
+            <div class="poem-body">
+Hendes baggrund
+var så broget at
+det var svært at
+få øje på hende
+
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-33">
+            <h2>Fællesskabet</h2>
+            <div class="poem-body">
+
+Vi er fælles om det meste
+Deler alt med hinanden
+Lever under samme kår
+
+De forskelle der er
+er i grunde ikke forskelle
+men nuancer
+som farven på vores hår
+
+Vi er i samme båd
+det ved vi
+og derfor kæmper vi hårdt om 
+pladsen først i 
+køen
+for fordi vi er fælles om det meste
+er det ikke alle
+som står
+bagest i køen
+der får</div>
+        </article>
+
+        <article class="poem" id="poem-34">
+            <h2>Genbesætning</h2>
+            <div class="poem-body">
+Vi er her jo
+side om side en
+stund indtil
+andre overtager
+vore pladser og
+afspiller deres 
+version
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-35">
+            <h2>Håb forude</h2>
+            <div class="poem-body">
+Lider du under 
+vægten af en 
+alt for stor
+familie -
+Så vent til du
+har været part i den 
+første arvesag
+
+          </div>
+        </article>
+
+        <article class="poem" id="poem-36">
+            <h2>Hør her - Makker</h2>
+            <div class="poem-body">
+Når man møder
+en fremmed
+
+kan man til tider
+ane et billede af
+sig selv
+
+Jeg kan ikke fordrage
+det jeg fornemmer
+når du sidder og 
+kigger på mig
+          </div>
+        </article>
+
+        <article class="poem" id="poem-37">
+            <h2>Himmelfart</h2>
+            <div class="poem-body">
+At flyve til
+himlen på
+rosa vinger er
+let nok -
+Det er 
+landingen på
+jorden der
+er problemet
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-38">
+            <h2>Hjemsøgt</h2>
+            <div class="poem-body">
+Der var de sygdomme han
+ikke havde hørt om og
+dem der ikke havde
+hørt om ham
+
+- men ellers var han
+hårdt ramt
+          </div>
+        </article>
+
+        <article class="poem" id="poem-39">
+            <h2>Hundred og en</h2>
+            <div class="poem-body">
+Livet kan beslutte at
+sætte dig over for 
+valget mellem
+hundred procent kærlighed 
+og
+hundred procent kærlighed
+
+Smerten kan lære dig at
+der findes kærlighed med
+en styrke på hundred og en </div>
+        </article>
+
+        <article class="poem" id="poem-40">
+            <h2>Husråd</h2>
+            <div class="poem-body">
+En god hovedpude 
+er stoppet med 
+andres skyld
+          </div>
+        </article>
+
+        <article class="poem" id="poem-41">
+            <h2>Hvaler</h2>
+            <div class="poem-body">
+Det siges at
+hvaler kommunikerer
+over hundredevis af
+kilometer
+
+Hvorfor hører du
+ikke min smerte
+
+Jeg er enoghalvfjerds
+centimeter væk
+          </div>
+        </article>
+
+        <article class="poem" id="poem-42">
+            <h2>Hvor?</h2>
+            <div class="poem-body">
+Som barn var
+hun bange for at
+blive væk fra
+sin mor
+Senere i livet lærte hun 
+at det er værre at 
+blive væk fra 
+sig selv og ikke
+vide hvor man blev af
+selvom man sidder 
+derhjemme
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-43">
+            <h2>Hysterisk</h2>
+            <div class="poem-body">
+Er der da ikke nogen der
+kan lukke kæften på den 
+hysteriske køter der står og 
+skaber sig dagen lang 
+Den må jo være syg i 
+hovedet af at være
+lukket inde bag
+ligusterhække og palisader mens
+det eneste den kan tænke  på er
+frække damer og fri adgang til at
+lette ben men det er altså 
+forbandet at høre på når 
+man går her hele dagen og
+har nok at gøre med 
+at holde det hele pænt
+
+
+          </div>
+        </article>
+
+        <article class="poem" id="poem-44">
+            <h2>I al anstændighed</h2>
+            <div class="poem-body">
+Jeg ved jeg
+med tiden vil 
+begå et 
+overgreb mod
+dig men
+først vil jeg
+arbejde på at
+fremstille dig i 
+et lys der
+får alle til at
+indse at jeg ikke
+havde andet
+valg 
+          </div>
+        </article>
+
+        <article class="poem" id="poem-45">
+            <h2>I al beskedenhed</h2>
+            <div class="poem-body">
+Så er det jeg har 
+tænkt over om 
+det er sådan at 
+der er nogen der 
+har noget imod at 
+jeg sidder foran når 
+vi kører derover men 
+hvis der er nogen der 
+gerne  vil sidde der så  
+sidder jeg ligeså gerne 
+bagi det har jeg ikke 
+spor imod det 
+er bare sådan at 
+jeg let bliver 
+køresyg hvis jeg 
+ikke sidder foran men 
+I må endelig sige til hvis 
+I hellere vil sidde foran for 
+jeg klarer det sagtens bagi jeg 
+kigger bare langt ud ligesom 
+når jeg er ude og sejle så 
+mærker jeg ikke det 
+mindste og man sidder jo 
+godt beskyttet bagi 
+men nu siger I altså til jeg 
+vil ikke være til 
+besvær for nogen
+
+
+          </div>
+        </article>
+
+        <article class="poem" id="poem-46">
+            <h2>Integration</h2>
+            <div class="poem-body">
+Han var godt nok
+sort men så 
+optaget af at
+tilpasse sig de 
+hvide at nogle tog 
+fejl og 
+forvekslede ham med 
+en programmeret
+albino
+          </div>
+        </article>
+
+        <article class="poem" id="poem-47">
+            <h2>Ja hvem ved</h2>
+            <div class="poem-body">
+Som ung blev han
+spået at han ville
+ende sit liv som
+en stor vismand
+Livet igennem blev
+han behandlet for
+en psykisk lidelse der
+gav ham en fremtræden 
+som en skæv kopi af 
+paven parret  med 
+Dalai Lama
+
+
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-48">
+            <h2>Ja ja da</h2>
+            <div class="poem-body">
+Hun efterstræbte ham
+utrætteligt til
+han gav op og
+lod sig blive hendes
+hustyran
+
+
+11.januar 2004
+          </div>
+        </article>
+
+        <article class="poem" id="poem-49">
+            <h2>Kaffemik</h2>
+            <div class="poem-body">
+Verdensordenen
+lægger sig tungt om 
+min hals og 
+forlanger lyd
+Verdensfreden og
+den globale opvarmning
+står parat med 
+grundvandets forgiftning og 
+kræver svar mens det 
+evige liv
+hvisler ondt fra
+kulissen
+Er der noget
+nogen har glemt?
+Jeg ser mig omkring
+efter hjælp  fra 
+familiens problemer 
+for slet ikke at tale om 
+økonomien der som altid
+stikker hovedet i 
+busken og lader som 
+ingenting
+Jeg smider min glæde over 
+livet på bordet men indser
+det er ingenting mod 
+al landsens ulykker der 
+sidder til bords med 
+en rødmende skam over
+et livs resultater der 
+tier og tæller på 
+en hånd mellem 
+tilværelsens onde tanter der 
+ikke giver op før 
+tallerkenen er 
+tom
+
+
+          </div>
+        </article>
+
+        <article class="poem" id="poem-50">
+            <h2>Karakterbrist</h2>
+            <div class="poem-body">
+Stilheden har det
+med at stille
+ubehagelige
+spørgsmål
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-51">
+            <h2>Kludetæppet</h2>
+            <div class="poem-body">
+Hun lignede sin
+farmor til 
+forveksling
+havde sin haveinteresse fra 
+sin far
+sine kulinariske evner fra sin 
+mor mens et lidt vel 
+fantasifuldt træk kom 
+fra hendes oldefar der 
+var kendt som en stor fortæller
+En fjern tante have skænket hende
+appetit på kønne mandfolk mens 
+hendes udprægede trang til
+kommunikation mentes at 
+udspringe fra en oldemor på 
+moderens side
+Således begavet slog hun sig ned i 
+sofaen med en kop te hyllet i 
+sit kludetæppe
+
+Hendes trang til 
+magelighed stammede fra 
+en tante der heller ikke
+hørte til de slanke
+
+
+
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-52">
+            <h2>Kommentar</h2>
+            <div class="poem-body">
+
+Om du så kvækker hele telefonbogen
+af dig
+eller udvalgte dele af
+Nudansk Ordbog
+parret med indholdet af
+Fremmedordbogen
+sovset rundt i Psykologisk Håndbog
+kan du spare dig
+Dit intellektuelt
+manipulerede budskab er
+galende ligegyldigt
+og så kunstigt
+arrangeret
+at mine ører
+byder sig skamløst til for
+hvem som helst
+der hvisker bare ét
+purt barnligt ord
+der er ægtefødt af hjertet</div>
+        </article>
+
+        <article class="poem" id="poem-53">
+            <h2>Kontrollant</h2>
+            <div class="poem-body">
+
+At føle tanker eller
+at tænke følelser er
+farlige discipliner der
+har skadet mange
+Tanker skal tænkes og
+følelser føles men det er 
+obligatorisk for
+begge at være den
+andens kontrollant
+          </div>
+        </article>
+
+        <article class="poem" id="poem-54">
+            <h2>Kursændring?</h2>
+            <div class="poem-body">
+Du
+mit vidne
+- hvis du er der
+et sted 
+Du ved jeg 
+har stræbt efter
+kærlighed 
+Se hvordan 
+det gik 
+Måske skulle jeg
+prøve at
+hade lidt
+
+
+          </div>
+        </article>
+
+        <article class="poem" id="poem-55">
+            <h2>Livsløbet</h2>
+            <div class="poem-body">
+Midt på ruten sprang
+kæden af og han
+måtte gå resten af 
+vejen hjem mens
+de øvrige deltagere
+en efter en kørte
+forbi med glade
+smil
+
+
+21-12-2003
+
+
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-56">
+            <h2>Lydløs</h2>
+            <div class="poem-body">
+Så let som
+ingenting fløj
+sætningen af sted og
+plantede en sten i
+hjertet på én der
+havde håbet på en 
+god dag
+
+Den blev aldrig
+udtalt
+
+
+
+          </div>
+        </article>
+
+        <article class="poem" id="poem-57">
+            <h2>Lykken den er…</h2>
+            <div class="poem-body">
+Han var godt
+gift -
+cyklede altid
+bagest i 
+modvind
+          </div>
+        </article>
+
+        <article class="poem" id="poem-58">
+            <h2>Lys</h2>
+            <div class="poem-body">
+Vil du finde lys 
+må du afsøge 
+mørket
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-59">
+            <h2>Måske</h2>
+            <div class="poem-body">
+Sædvane holder
+møde med
+tradition om et
+fælles fodslag
+mens plejer smiler fra 
+væggen
+
+Fremtid er på
+prøve
+          </div>
+        </article>
+
+        <article class="poem" id="poem-60">
+            <h2>Medmennesker</h2>
+            <div class="poem-body">
+Først er vi sønner og
+døtre så
+bliver vi fædre og
+mødre
+Måske oplever vi
+at blive børnenes
+børn til sidst og
+undgår helt at
+være hinandens
+medmennesker
+
+4.september 2003
+          </div>
+        </article>
+
+        <article class="poem" id="poem-61">
+            <h2>Ministerfruen</h2>
+            <div class="poem-body">
+Han havde giftet sig
+med den yndigste
+lille spurv der nu 
+måtte tage timer i
+tranedans
+
+          </div>
+        </article>
+
+        <article class="poem" id="poem-62">
+            <h2>Misundelse</h2>
+            <div class="poem-body">
+Dyr skider
+Mennesker har
+afføring
+Alligevel blev jeg
+misundelig da jeg
+så den lort
+naboens Pølle
+plantede på
+mit fortov
+
+          </div>
+        </article>
+
+        <article class="poem" id="poem-63">
+            <h2>Moders hånd</h2>
+            <div class="poem-body">
+Hun var stærk i
+rollen som
+mor
+Bankede med
+lethed både
+mand og børn
+
+
+24. februar 2004
+          </div>
+        </article>
+
+        <article class="poem" id="poem-64">
+            <h2>Modvind</h2>
+            <div class="poem-body">
+I kampen med vinden der 
+altid var imod
+opdagede du ikke at 
+du for hvert skridt frem 
+lagde et skridt til 
+afstanden mellem os
+          </div>
+        </article>
+
+        <article class="poem" id="poem-65">
+            <h2>Mor</h2>
+            <div class="poem-body">
+De havde ingen
+børn
+Det ville aldrig gå 
+Han have selv brug for 
+al den omsorg der
+var at få
+
+
+10. februar 2004
+          </div>
+        </article>
+
+        <article class="poem" id="poem-66">
+            <h2>Museum</h2>
+            <div class="poem-body">
+
+På museet stod
+servicet Marie Antoinette brugte
+i sit fangenskab før hun fik hovedet hugget af
+Hendes følelser i den anledning
+var dog ikke at se og
+ikke en tanke undslap
+det brugte stel
+Kopperne overlevede hele nok
+deres hovedløse dronning
+skønt hun med hovedet intakt
+næppe skænkede dem en tanke
+Hvor dronningen er
+ved jeg ikke
+men porcelænet findes altså
+og kan beskues
+så ofte nogen løser billet
+          </div>
+        </article>
+
+        <article class="poem" id="poem-67">
+            <h2>Myrer</h2>
+            <div class="poem-body">
+Da hun indså at der
+fra hende selv var
+lige langt i alle
+retninger satte hun sig
+fornøjet i centrum og 
+bed en luns af 
+livet som hun 
+nød mens hun dovent 
+betragtede mylderet af 
+myrer på
+terrassens slidte
+fliser
+
+
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-68">
+            <h2>Næsten</h2>
+            <div class="poem-body">
+Jeg var
+fuld
+i går
+
+Jeg er
+ikke fuld
+i dag 
+
+
+Men jeg vil nok
+være fuld
+i morgen
+igen
+
+
+18. januar 2004</div>
+        </article>
+
+        <article class="poem" id="poem-69">
+            <h2>Nå sådan</h2>
+            <div class="poem-body">
+De fleste ved at
+livet sluttes af
+døden
+Alligevel lever
+vi som om vi
+har indtaget
+det evige liv og
+det er måske
+netop det der er
+livets mening
+
+          </div>
+        </article>
+
+        <article class="poem" id="poem-70">
+            <h2>Nåde</h2>
+            <div class="poem-body">
+Der findes 
+emner man har
+lov til ikke at
+have en
+menig om
+- f.eks. dem
+man ikke har
+indsigt i
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-71">
+            <h2>Notat </h2>
+            <div class="poem-body">
+Set ud fra en 
+kølig betragtning er der 
+ikke meget at 
+bemærke - 
+men hun har jo altid haft 
+et ildfuldt blik 
+
+
+
+
+December 2004
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-72">
+            <h2>Om kærlighed og bytteleg</h2>
+            <div class="poem-body">
+Hvis jeg var dig
+og du var mig
+kunne vi elske hinanden som nu
+Jeg elsker dig
+og du
+mig
+
+Elsker du mig, elsker jeg dig
+
+Hvis jeg var dig
+som mig i dig
+og du var mig
+som dig i mig
+kunne vi elske os selv
+i hinanden
+
+Elsker du mig, elsker du dig
+Elsker jeg dig, elsker jeg mig
+
+Du skal elske din næste som dig selv
+
+Det er vel bedst
+hvis jeg er mig
+og du er dig
+og kærligheden
+ingen bytteleg
+
+Jeg elsker dig.
+
+Elsker du mig?</div>
+        </article>
+
+        <article class="poem" id="poem-73">
+            <h2>Omsider</h2>
+            <div class="poem-body">
+Efter et langt livs
+ambition
+går man sin
+afmægtighed i
+møde og byder
+den velkommen
+          </div>
+        </article>
+
+        <article class="poem" id="poem-74">
+            <h2>Op og ned</h2>
+            <div class="poem-body">
+Tæppet gik op for
+virkeligheden og
+ned for illusionen
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-75">
+            <h2>Opskrifter</h2>
+            <div class="poem-body">
+Du gør som
+anvist og
+kommer frem til
+et resultat der
+til forveksling ligner
+hvad du blev
+lovet men
+indser at du intet
+har at gøre her
+hvor du ikke
+genkender dit eget
+landskab der
+solsvedent venter din
+forløsende regn
+
+
+          </div>
+        </article>
+
+        <article class="poem" id="poem-76">
+            <h2>Oserinden</h2>
+            <div class="poem-body">
+Der var ikke
+tale om at hun
+på nogen måde
+forsøgte at skabe
+et forkert indtryk
+Nærmest ved et
+uheld gled hun
+over i en fornem
+frues attitude der
+næsten på egen
+hånd gik i 
+realitetsforhandlinger
+om en  millionlejlighed
+der dog heldigvis
+viste sig at  have et
+køkken der vendte 
+mod nord
+
+Man vender jo
+ikke lige en
+boligblok
+
+
+
+
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-77">
+            <h2>Overfaldet</h2>
+            <div class="poem-body">
+Den flyvende fedtklump
+slog til igen da
+den ramte mig
+klistret midt på panden
+drev ned over fyldige æblekinder
+og formede yppige hængebryster
+for efter en tid at falde til ro
+i vuggende hofter
+over fremfalden mave
+alt båret frem
+på latterligt tynde
+ben.</div>
+        </article>
+
+        <article class="poem" id="poem-78">
+            <h2>Overflod</h2>
+            <div class="poem-body">
+Der er stjerner nok
+til os alle
+så længe vi ikke kan
+nå dem</div>
+        </article>
+
+        <article class="poem" id="poem-79">
+            <h2>Personlighed ?</h2>
+            <div class="poem-body">
+Det du ser er
+et lærred og
+en projiceret
+film
+
+Kigger du efter 
+kan du gennem 
+overfladen ane en 
+lille person der
+helt alene holder 
+showet i gang
+          </div>
+        </article>
+
+        <article class="poem" id="poem-80">
+            <h2>Prædikanten</h2>
+            <div class="poem-body">
+Han forkyndte
+Guds vilje som
+han forstod
+bedre end
+menneskets 
+virkelighed
+          </div>
+        </article>
+
+        <article class="poem" id="poem-81">
+            <h2>Prinsen</h2>
+            <div class="poem-body">
+Han var altid
+prins
+- også om 
+natten
+
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-82">
+            <h2>Rådgiveren</h2>
+            <div class="poem-body">
+Jeg er aldrig i tvivl om
+hvad der bør gøres -
+med mindre jeg selv
+er involveret
+
+
+10. februar 2004
+
+          </div>
+        </article>
+
+        <article class="poem" id="poem-83">
+            <h2>Rationalisering</h2>
+            <div class="poem-body">
+Ofte tager det
+længere tid at
+finde en undskyldning for 
+ikke at hjælpe end 
+det ville have gjort at 
+give en hånd med
+          </div>
+        </article>
+
+        <article class="poem" id="poem-84">
+            <h2>Realisten</h2>
+            <div class="poem-body">
+
+Bær hinandens
+byrder -
+men let på 
+jeres egen
+først
+          </div>
+        </article>
+
+        <article class="poem" id="poem-85">
+            <h2>Redskab</h2>
+            <div class="poem-body">
+Måske er fortiden det
+redskab du skal
+bruge når du fra
+nutiden forsøger at
+påvirke fremtiden
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-86">
+            <h2>Reformatoren</h2>
+            <div class="poem-body">
+Resolut skar han
+igennem til
+sandheden og indså at 
+han havde misforstået
+alt
+
+
+27-12-2003
+          </div>
+        </article>
+
+        <article class="poem" id="poem-87">
+            <h2>Rekord</h2>
+            <div class="poem-body">
+Øjne løber
+hurtigere end 
+ben —
+også baglæns
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-88">
+            <h2>Reportage - med indlagt stilbrud</h2>
+            <div class="poem-body">
+Majestæten skred frem
+ad det røde tæppe mod 
+det forventningsspændte
+bånd 
+
+Det gyldne klip frosset i
+blitzlys under
+en konges hånd
+
+Herefter vendte regenten
+snuden direkte
+hjem
+
+(Denne tekst blev - med et vedlagt smil - sendt til en journalist ved Fyens Stiftstidende efter en reportage om royalt besøg i Odense)
+
+
+
+
+
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-89">
+            <h2>Risikovurdering</h2>
+            <div class="poem-body">
+Det, du selv yder,
+er du sikker på.
+Det, du forventer dig af
+andre, er en
+risikabel affære.
+
+          </div>
+        </article>
+
+        <article class="poem" id="poem-90">
+            <h2>Risikovurdering</h2>
+            <div class="poem-body">
+Giver du dig i
+kast med en
+gordisk knude
+kan det ende med at
+det er dig der
+bliver hugget over
+
+
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-91">
+            <h2>Rygrad</h2>
+            <div class="poem-body">
+Da hun fandt en 
+hun kunne se op til
+klatrede  hun 
+behændigt op og 
+sprang ud i 
+røde roser
+
+          </div>
+        </article>
+
+        <article class="poem" id="poem-92">
+            <h2>Så længe…</h2>
+            <div class="poem-body">
+Så længe musikken spiller, kan der danses.
+
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-93">
+            <h2>Sølvbrylluppet</h2>
+            <div class="poem-body">
+Jo vist vandt du din
+magtkamp men du
+forstod aldrig at
+dermed tabte vi alt
+
+
+
+          </div>
+        </article>
+
+        <article class="poem" id="poem-94">
+            <h2>Saltvand</h2>
+            <div class="poem-body">
+Det er vel med
+kærligheden 
+som med
+grundvandet
+Hver gang du
+overøser jorden
+med salt stiger
+det bitre lag
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-95">
+            <h2>Samarbejde</h2>
+            <div class="poem-body">
+At den  Almægtiges
+kærlighed er
+adresseret til alle
+er et tegn på
+hans uansvarlighed
+
+Det ved vi der
+har rettet op og
+defineret vores
+forskellighed
+
+          </div>
+        </article>
+
+        <article class="poem" id="poem-96">
+            <h2>Samarbejde</h2>
+            <div class="poem-body">
+Saglige begrundelser 
+opmarcheret på 
+to rækker
+gør holdt foran
+den folkelige opinion der
+længe har forsøgt at
+finde et ståsted
+På tværs af flugtvejen har
+man anbragt en 
+folketingsmand der uden 
+at blinke kan åbne for
+helvedes porte og 
+anvise vej til
+Slaraffenland
+
+          </div>
+        </article>
+
+        <article class="poem" id="poem-97">
+            <h2>Sammenhold</h2>
+            <div class="poem-body">
+Skumfødt hilser du
+lyset mens du krydser
+sumpen stående på
+ryggen  af  den du
+har trådt ned i 
+sølet
+          </div>
+        </article>
+
+        <article class="poem" id="poem-98">
+            <h2>Sammensat</h2>
+            <div class="poem-body">
+Han var ikke så
+høj og ligesom sat
+sammen af to dele der 
+ikke passede til
+hinanden
+Det var udelukkende
+den store der
+førte ordet og man
+kunne ikke lade
+være med at
+spekulere på hvad der
+var blevet af resten af 
+den lille der måtte
+nøjes med at
+være ben
+
+
+November 2004
+
+
+          </div>
+        </article>
+
+        <article class="poem" id="poem-99">
+            <h2>Samspil</h2>
+            <div class="poem-body">
+Vil kroppens organer
+være singler 
+kollapser 
+universet
+
+
+
+          </div>
+        </article>
+
+        <article class="poem" id="poem-100">
+            <h2>Sardin</h2>
+            <div class="poem-body">
+Som en sardin i
+sin dåse trækker hun i
+egen saft mens hun
+smager bitterheden til
+sidste dråbe
+
+          </div>
+        </article>
+
+        <article class="poem" id="poem-101">
+            <h2>Selvhjulpne</h2>
+            <div class="poem-body">
+Selvhjulpne begyndelser til et 
+forehavende jeg ikke kan 
+godkende er allerede så 
+godt i gang at jeg for 
+et syns skyld må give 
+en hånd med
+Alt tegner jo i øvrigt til
+et heldigt resultat
+          </div>
+        </article>
+
+        <article class="poem" id="poem-102">
+            <h2>Slikmund</h2>
+            <div class="poem-body">
+Så længe man
+kan forklare
+alt ubehag som
+andres skyld kan
+man selv blive 
+siddende ved
+konfektskålen
+
+
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-103">
+            <h2>Snøren</h2>
+            <div class="poem-body">
+Han havde levet sit
+liv i et langt
+fremadrettet kast
+Da det blev tid at
+trække linen ind
+kom han i tvivl om
+der var bid
+          </div>
+        </article>
+
+        <article class="poem" id="poem-104">
+            <h2>Snusfornuft</h2>
+            <div class="poem-body">
+Herregud
+Er der noget at
+være bange for?
+Hvor var du et 
+år før du blev
+født?
+          </div>
+        </article>
+
+        <article class="poem" id="poem-105">
+            <h2>Spekulation</h2>
+            <div class="poem-body">
+Hun ville
+utvivlsomt have været
+til inspiration for
+Mother Theresa -
+dersom denne havde 
+kendt til hendes
+eksistens
+Til gengæld ville nonnen vel 
+have taget vare på 
+den gæve kvindes børn og
+hendes overtrætte mand
+          </div>
+        </article>
+
+        <article class="poem" id="poem-106">
+            <h2>Stregen</h2>
+            <div class="poem-body">
+Der er dem
+på den ene
+side og dem på 
+den anden
+Dem med den
+rigtige farve og dem
+med den forkerte
+Den rigtige mening ved altid
+hvilken side den er på
+som ret og uret der
+mirakuløst af sig selv
+finder hjem
+Hvordan man kan
+være på den forkerte
+side er mig en gåde
+der undgås når
+man kaster et 
+blik over
+stregen
+
+
+          </div>
+        </article>
+
+        <article class="poem" id="poem-107">
+            <h2>Svigerinden 1</h2>
+            <div class="poem-body">
+Hvad sagde jeg
+
+Sagde jeg det ikke nok
+og nu har vi skandalen
+enhver kunne have
+forudset at de ikke
+havde råd
+Og den bil ja
+sådan noget koster
+men de ligger som de
+reder det er nu min
+mening og har du så 
+hørt at de to hankaniner
+har fået unger et rod over 
+det hele du behøver bare 
+kigge på køkkengulvet men 
+ikke mine ord igen
+
+
+          </div>
+        </article>
+
+        <article class="poem" id="poem-108">
+            <h2>Svigerinden 2</h2>
+            <div class="poem-body">
+Menuen
+
+Og vi skal have 
+mørbrad fyldt 
+mørbrad med
+persille den 
+skønneste persille jeg 
+selv har fyldt i en 
+lækker mørbrad og 
+pillekartofler små 
+pillede aspargeskartofler med 
+drys og ved du 
+hvad asier rigtig 
+hjemmesyltede asier som jeg
+har købt på torvet og
+syltet en hel lørdag det 
+bliver  lækkert og så skal 
+vi have trifli vi 
+skal have trifli til 
+dessert kanontrifli med
+sherry en dejlig 
+kanontrifli med
+sherry fyldt mørbrad 
+fyldt mørbrad og kanontrifli
+en rigtig skøn trifli
+og kartofler med drys
+
+
+
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-109">
+            <h2>Så menneskeligt</h2>
+            <div class="poem-body">
+Rolig frue
+rolig
+Vi er ikke skabt som
+engle - husk:
+de har ingen
+maver
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-110">
+            <h2>Tømmermænd</h2>
+            <div class="poem-body">
+
+Efter en lang aftens snak
+sludren og tæt druk
+er de tømmermænd der
+kommer træskohamrende
+på grund af spritten
+de elskværdigste
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-111">
+            <h2>Tarzan</h2>
+            <div class="poem-body">
+Jeg må kaste mig ud af 
+stilheden og forsøge at 
+sætte foden på
+et par nakker 
+Tortere luften med 
+hunkønshvin
+Brøle mig larmende gennem
+junglen og vælte et par 
+småbørn inden jeg igen kan 
+lade mig betjene af
+alt det jeg må lade 
+ligge her
+          </div>
+        </article>
+
+        <article class="poem" id="poem-112">
+            <h2>Thi kendes for ret</h2>
+            <div class="poem-body">
+Hvis man absolut vil være
+sine omgivelsers dommer
+må man vel anstændigvis
+opgive også at være
+anklager og forsvarer
+          </div>
+        </article>
+
+        <article class="poem" id="poem-113">
+            <h2>Tilgivelse</h2>
+            <div class="poem-body">
+
+Alle
+tilgiver jeg
+
+Alt
+
+Kun ikke dig
+jeg forbrød mig
+imod</div>
+        </article>
+
+        <article class="poem" id="poem-114">
+            <h2>Tja…</h2>
+            <div class="poem-body">
+Lige så umuligt at
+gendanne sin
+fortid som
+håbløst at
+konservere sin
+nutid
+
+Fortid skal vel
+forstås
+Nutid leves og
+fremtid tages 
+imod
+
+          </div>
+        </article>
+
+        <article class="poem" id="poem-115">
+            <h2>Transport</h2>
+            <div class="poem-body">
+De tungeste
+byrder bæres i
+hjertet
+
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-116">
+            <h2>Trin</h2>
+            <div class="poem-body">
+Vi går op ad
+trapper andre
+har opført
+for at lægge
+vore trin der
+en dag bringer
+nogen til en
+ny etage
+
+
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-117">
+            <h2>Tung</h2>
+            <div class="poem-body">
+Det var en af de dage
+der var gået i stå så
+man selv måtte slide 
+ved hejseværket
+
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-118">
+            <h2>Ulykke</h2>
+            <div class="poem-body">
+Drømmen glemte at
+tage sig i agt for
+mulighederne og 
+blev slået til
+skuffelse
+          </div>
+        </article>
+
+        <article class="poem" id="poem-119">
+            <h2>Ved begravelsen</h2>
+            <div class="poem-body">
+Familien bliver
+lille, sagde hun
+hændervridende
+men overså at de
+endnu levende
+behandlede hinanden så
+ufølsomt at flere i 
+følget skævede
+langt efter 
+gravens privatliv
+          </div>
+        </article>
+
+        <article class="poem" id="poem-120">
+            <h2>Verdensbilledet</h2>
+            <div class="poem-body">
+Han stillede
+sig i kreds om
+sin kone indtil
+hun troede
+verden var
+ham
+          </div>
+        </article>
+
+        <article class="poem" id="poem-121">
+            <h2>Vurdering </h2>
+            <div class="poem-body">
+Det er ufarligt at 
+kritisere detaljen 
+så længe man ikke 
+anfægter systemet 
+
+
+
+
+Januar 2005
+                  </div>
+        </article>
+
+        <article class="poem" id="poem-122">
+            <h2>tête-à-tête</h2>
+            <div class="poem-body">
+Selvom der ikke
+er langt over
+bordet er der
+isfjelde mellem
+vore fikserede
+kuverter så
+intet budskab
+når over de
+kolde toppe bag
+hvilke solen netop
+gik ned
+
+
+          </div>
+        </article>
+        <hr>
+
+        <section class="author-info">
+            <h2>Om forfatteren</h2>
+            <img class="author-photo" src="../Images/Pasfoto_1964.jpg" alt="Frede Østergaard i 1964">
+            <p>Frede Østergaard (f. 1945) er lærer og teologisk uddannet.</p>
+            <p>Han begyndte at skrive digte tidligt i livet, og forfatterskabet har udviklet sig over mere end seks årtier.</p>
+            <p>De første tekster blev skrevet og delt i mindre, uformelle sammenhænge, før de senere blev samlet og udgivet gennem Den Gamle Poet.</p>
+        </section>
+        <hr>
+
+        <section class="other-collections">
+            <h2>Andre samlinger</h2>
+            <ul style="list-style: none; padding: 0;">
+                <li>Brønden (1965)</li>
+                <li>Natur (1968–1970)</li>
+                <li>Halvfjerdserbrun (1972)</li>
+                <li>Stengrunds tørst (1980–1983)</li>
+                <li>Lys i mørket (1986)</li>
+                <li>Hjertets rytme (2001)</li>
+                <li>Klodeskyer (2002)</li>
+                <li>Stilhedens styrke (2002)</li>
+                <li>Yrk (2002–2003)</li>
+                <li>Konserves (2003)</li>
+                <li>Vækst (2003)</li>
+                <li>Firs tekster (2003–2004)</li>
+                <li>Kun et øjeblik (2004)</li>
+                <li>Dagen (2004)</li>
+                <li>Det ender med et smil (2004)</li>
+                <li>Vejen (2004)</li>
+                <li>Til Dig (2004)</li>
+                <li>Undervejs (2004)</li>
+                <li>Filibuster (2004–2005)</li>
+                <li>Perler på snor (2004–2010)</li>
+                <li>Billedbogen (2005)</li>
+                <li>Hjertets slag (2005)</li>
+                <li>Grib (2005)</li>
+                <li>Overvejelser (2005)</li>
+                <li>Skygger (2005–2006)</li>
+                <li>Tegn (2005–2006)</li>
+                <li>Jordens liv (2006)</li>
+                <li>Opdagelsesrejse (2006)</li>
+                <li>Månelys (2006–2009)</li>
+                <li>Aftryk (2010–2011)</li>
+                <li>Landskab (2004–2023)</li>
+            </ul>
+        </section>
+
+    </div> </body>
+</html>
